@@ -10,7 +10,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 from openpyxl import load_workbook
 
-APP_VERSION = '1.8-address-resolution-2026-09-21'
+APP_VERSION = '1.9-address-courier-fallback-2026-09-21'
 BASE = Path(__file__).resolve().parent
 DEFAULT_MASTER = BASE / 'data' / 'MASTER.xlsx'
 RULES_PATH = BASE / 'data' / 'special_rules.json'
@@ -18,6 +18,25 @@ REVIEW = 'KONTROL GEREK\u0130YOR'
 CLOSED = 'KAPALI'
 ACTIVE = 'ATANDI'
 TZ = ZoneInfo('Europe/Istanbul')
+
+# Mahalle alanı boş gelen günlük listeler için onaylı, ilçe kapsamlı adres ipuçları.
+# Kurye adı burada yalnızca rotayı seçer; Y.NO daima güncel MASTER'dan alınır.
+DEFAULT_ADDRESS_COURIER_HINTS = [
+    {'district':'Beşiktaş','courier':'Özcan Baş','any':['garanti bbva genel mudurluk','garanti bankasi genel mudurluk','aytar caddesi','zorlu center residence']},
+    {'district':'Beşiktaş','courier':'Abdullah Arkun','any':['yapikredi plaza','camlik caddesi','park maya sitesi','muderris salih rustu sokak']},
+    {'district':'Beşiktaş','courier':'Murat Turan','any':['turk telekom genel mudurluk vefa bayiri','gokturk sokak polat 1 sitesi']},
+    {'district':'Sarıyer','courier':'Ahmet Aksu','any':['ayazaga 125 sokak','125 sokak no 55','lara sokak tures sitesi']},
+    {'district':'Sarıyer','courier':'Sedat Açar','any':['demirefe sokak','konmaz sokak kent optimum','mahmut cikmazi sokak']},
+    {'district':'Sarıyer','courier':'Erkan Ceylan','any':['kanlikavak deresi sokak']},
+    {'district':'Sarıyer','courier':'Özcan Baş','any':['celebi yokusu sokak']},
+    {'district':'Kağıthane','courier':'Mehmet Koruk','any':['havadar sokak','guzeldere caddesi','dirayet sokak','cekimser sokak']},
+    {'district':'Avcılar','courier':'Ahmet Kasım','any':['senlik sokak']},
+    {'district':'Bakırköy','courier':'Hasan Uğur Bakırcıoğlu','any':['turk hava yollari ahl kargo','turk hava yollari genel mudurluk']},
+    {'district':'Bakırköy','courier':'Suat Özel','any':['rahmi apak sokak','beyaz lale sokak','novus residence']},
+    {'district':'Eyüpsultan','courier':'Abdurahim Akcan','any':['arketip 2 sitesi','kemerlife 21 sitesi','naturalist verde sitesi','turkmenistan konsoloslugu']},
+    {'district':'Kadıköy','courier':'Recep Akdağ','any':['fahrettin kerim gokay caddesi','egemen apartmani no3','kentplus a blok','gunesli sokak']},
+    {'district':'Kadıköy','courier':'Salih Berberoğlu','any':['kuyubasi sokak fenik','lavanta sokak','egemen sokak no 11','ortayol sokak','sakaci sokak','abdibey sokak ulu','tuccarbasi sokak','mehmet ertem alp sokak','papatyali sokak','fenerli ahmet sokak','aycil sokak ozgur']},
+]
 
 
 def clean_text(value):
@@ -420,6 +439,37 @@ def _special_matches(master,district,neighborhood,rec):
     return matches
 
 
+def _address_courier_fallback(master, district, rec):
+    """Use approved district-scoped address hints only when MAHALLE is blank.
+
+    The hint selects an existing MASTER courier; the current numeric Y.NO is
+    resolved from MASTER so route-number changes remain centralized.
+    Ambiguous or stale hints deliberately return no assignment.
+    """
+    if clean_text(rec.get('neighborhood')) or not district:
+        return None
+    text = clean_text(rec.get('address'))
+    configured = master.rules.get('address_courier_hints', [])
+    hints = configured if configured else DEFAULT_ADDRESS_COURIER_HINTS
+    matches = set()
+    for hint in hints:
+        if norm(district) != norm(hint.get('district')):
+            continue
+        any_phrases = hint.get('any') or []
+        all_phrases = hint.get('all') or []
+        if any_phrases and not any(contains_phrase(text, p) for p in any_phrases):
+            continue
+        if all_phrases and not all(contains_phrase(text, p) for p in all_phrases):
+            continue
+        if not any_phrases and not all_phrases:
+            continue
+        cname = canonical_courier(hint.get('courier'))
+        yno = master.name_to_yno.get(cname)
+        if yno is not None and yno in master.courier_names:
+            matches.add((master.courier_names[yno], yno))
+    return next(iter(matches)) if len(matches) == 1 else None
+
+
 def assign_record(rec,master=None):
     master = master if master is not None else MasterData()
     out=dict(rec)
@@ -454,12 +504,18 @@ def assign_record(rec,master=None):
             courier=row['courier']; yno=row['yno']; status=ACTIVE
             reason='MASTER: \u0130l\u00e7e + Mahalle tam e\u015fle\u015fme'
         else:
+            fallback = _address_courier_fallback(master, d, rec)
+            if fallback:
+                courier,yno=fallback; status=ACTIVE
+                reason='Mahalle bo\u015f: onayl\u0131 a\u00e7\u0131k adres b\u00f6lge kural\u0131 + g\u00fcncel MASTER'
+                error=''
+            else:
             # District-only assignment is safe only if ALL rows are active and same courier.
-            dr=master.district_rows.get(norm(d),[])
-            pairs={(r['courier'],r['yno']) for r in dr}
-            if dr and not n and all(r['status']!='KAPALI' for r in dr) and len(pairs)==1:
-                courier,yno=next(iter(pairs)); status=ACTIVE; reason='MASTER: tamam\u0131 aktif, tek kuryeli il\u00e7e'
-            else: error='\u0130l\u00e7e + mahalle e\u015fle\u015fmesi gerekli; tahmini kurye atanmad\u0131.'
+                dr=master.district_rows.get(norm(d),[])
+                pairs={(r['courier'],r['yno']) for r in dr}
+                if dr and not n and all(r['status']!='KAPALI' for r in dr) and len(pairs)==1:
+                    courier,yno=next(iter(pairs)); status=ACTIVE; reason='MASTER: tamam\u0131 aktif, tek kuryeli il\u00e7e'
+                else: error='\u0130l\u00e7e + mahalle e\u015fle\u015fmesi gerekli; tahmini kurye atanmad\u0131.'
     if error:
         reason=(reason+' | '+error).strip(' |')
         if not closed: courier=''; yno=None; status=REVIEW
