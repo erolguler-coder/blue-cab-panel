@@ -1,0 +1,18 @@
+BLUE CAB PANEL v1.8 - GITHUB'A YUKLEME
+
+1) Bu klasorun TAMAMINI kullanin. Musteri Excel dosyalarini repoya koymayin.
+2) GitHub Desktop -> File -> New Repository.
+3) Name: blue-cab-panel
+4) Local Path: bu klasorun bir ust klasoru veya bos bir klasor secin.
+5) Create Repository.
+6) Bu paketteki dosyalari repo klasorune kopyalayin.
+7) GitHub Desktop'ta Summary: BLUE CAB Panel v1.8 address resolution
+8) Commit to main.
+9) Publish repository.
+10) REPOSITORY MUTLAKA PRIVATE olsun.
+
+Render kullaniyorsaniz:
+Build Command: pip install -r requirements.txt
+Start Command: gunicorn app:app --workers 1 --threads 4 --timeout 180
+
+GitHub'a koymayin: musteri listeleri, telefon/adres iceren Excel dosyalari, .env veya gercek Google secret/key degerleri.

@@ -1,0 +1,911 @@
+﻿BLUE CAB DAĞITIM OPERASYONU
+MASTER KURYE ATAMA VE KONTROL KURALLARI
+Güncelleme: 31.08.2026
+
+
+AMAÇ
+Günlük firma listelerinde kurye atamalarını sıfır toleransla, aynı öncelik sırasına göre yapmak.
+Dosya "hazır" denmeden önce tüm kritik kontroller ikinci kez yapılacaktır.
+
+
+1) KURAL ÖNCELİK SIRASI
+Her kayıt için aşağıdaki sıra değişmeden uygulanır:
+
+
+A. GERÇEK İLÇEYİ TESPİT ET
+- Sadece "Semt/İlçe" sütununa güvenme.
+- Açık Adres mutlaka okunacak.
+- Semt/İlçe sütunu ile açık adres çelişiyorsa açık adresteki gerçek ilçe esas alınır.
+- Örnek: "Maltepe Mah. - Zeytinburnu" = Zeytinburnu ilçesi. Maltepe ilçesi değildir.
+- Örnek: sütunda Sancaktepe yazsa bile açık adres Bağcılar ise kayıt Bağcılar kabul edilir.
+
+
+B. GERÇEK 09:00-11:00 SAATİNİ TESPİT ET
+- "9-11" ifadesi operasyon dilinde 09:00-11:00 teslimat saat aralığı demektir.
+- Saat sütunu, teslimat notu ve özel not alanları birlikte kontrol edilir.
+- "09:00-11:00", "09.00-11.00", "9-11", "9:00-11:00", "9 ile 11 arası" gibi gerçek saat ifadeleri aynı kabul edilir.
+- Adresteki "No:9/11", "910 Sokak", "9-11 kapı no" gibi ifadeler ASLA saat sayılmaz.
+
+
+C. 09:00-11:00 ÖZEL KURYE KURALINI UYGULA
+Tüm firmalarda:
+- Sarıyer -> Özcan Baş
+- Beşiktaş -> Özcan Baş
+- Şişli -> Özcan Baş
+- Kadıköy -> Recep Akdağ
+- Ataşehir -> Hamza Talha Erol
+- Ümraniye -> Orhan Karasu
+- Üsküdar -> Okan Muslu
+- Maltepe ilçesi -> Talha Çekici
+- Bakırköy -> Suat Özel
+- Zeytinburnu -> Suat Özel
+- Fatih -> Suat Özel
+- Merter -> Suat Özel
+- Güngören -> Suat Özel
+
+
+Not:
+- Bakırköy'de normal saatte bazı mahalleler Hasan Uğur Bakırcıoğlu'nda olsa bile 09:00-11:00 ise Suat Özel atanır.
+- Yeşilköy, Şenlikköy, Basınköy, Yeşilyurt 09:00-11:00 -> Suat Özel.
+- 09:00-11:00 özel saat hücresi sarı renkle işaretlenir.
+
+
+D. ÖZEL MAHALLE / CADDE / BÖLGE KURALLARINI UYGULA
+Saat özel kuralına girmeyen kayıtlarda özel bölge kuralları genel ilçe kuralından önce gelir.
+
+
+Örnek kritik kurallar:
+- Sarıyer Ayazağa / Huzur / Maslak -> Ahmet Aksu
+- Ayazağa'daki Kemerburgaz Caddesi -> Ahmet Aksu
+- Eyüpsultan Kemerburgaz / Göktürk / Göktürk Merkez / 5. Levent -> Abdurrahim Akcan
+- Çamlıvadi -> Ahmet Aksu
+- Kağıthane/Hamidiye tarafındaki tanımlı Anadolu Caddesi -> Ahmet Aksu
+- "Maltepe - Zeytinburnu" açık adresi -> Suat Özel
+
+
+E. NORMAL MAHALLE / İLÇE KURYELERİNİ UYGULA
+Özel saat ve özel bölge kuralına girmeyen kayıtlar normal operasyon dağılımına göre atanır.
+
+
+2) BEŞİKTAŞ NORMAL SAAT KRİTİK KONTROLÜ
+Aşağıdaki mahalleler Murat Turan:
+- Abbasağa
+- Balmumcu
+- Cihannüma
+- Dikilitaş
+- Gayrettepe
+- Mecidiye
+- Muradiye
+- Sinanpaşa
+- Türkali
+- Vişnezade
+- Yıldız
+
+
+Diğer tanımlı Beşiktaş mahalleleri Abdullah Arkun.
+Ancak 09:00-11:00 ise Beşiktaş tamamı Özcan Baş.
+
+
+3) BAKIRKÖY NORMAL SAAT
+Normal saatte:
+- Basınköy -> Hasan Uğur Bakırcıoğlu
+- Şenlikköy -> Hasan Uğur Bakırcıoğlu
+- Yeşilköy -> Hasan Uğur Bakırcıoğlu
+- Yeşilyurt -> Hasan Uğur Bakırcıoğlu
+- Diğer Bakırköy -> Suat Özel
+
+
+09:00-11:00 olduğunda Bakırköy tamamı -> Suat Özel.
+
+
+4) ZORUNLU İKİNCİ KONTROL
+Dosya paylaşılmadan önce aşağıdakiler mutlaka kontrol edilir:
+
+
+[ ] Gerçek ilçe açık adresle doğrulandı mı?
+[ ] Semt/İlçe ve açık adres çelişkileri kontrol edildi mi?
+[ ] Tüm gerçek 09:00-11:00 kayıtları bulundu mu?
+[ ] No:9/11, 910 Sokak gibi sahte saat eşleşmeleri elendi mi?
+[ ] 09:00-11:00 özel kuryeleri doğru mu?
+[ ] 09:00-11:00 hücreleri sarı mı?
+[ ] Beşiktaş mahalleleri Murat Turan / Abdullah Arkun açısından kontrol edildi mi?
+[ ] Sarıyer mahalle özel dağılımları kontrol edildi mi?
+[ ] Kağıthane özel bölge/cadde kuralları kontrol edildi mi?
+[ ] "Maltepe Mah. / Zeytinburnu" gibi ilçe-karışıklıkları kontrol edildi mi?
+[ ] KONTROL / KAPALI / BOŞ kurye kalan kayıt var mı?
+[ ] Kurye özeti yeniden hesaplandı mı?
+[ ] Dosya ikinci kez baştan sona kontrol edildi mi?
+
+
+5) HATA TOLERANSI
+- Tahmin ederek kurye atama yapılmaz.
+- Emin olunmayan gerçek ilçe veya özel kural varsa kayıt işaretlenir ve teyit edilir.
+- Dosya "tamamlandı" denmeden önce ikinci kontrol zorunludur.
+- Önceki otomatik atamaya güvenilmez; her yeni dosyada kurallar yeniden uygulanır.
+
+
+6) OPERASYON TERİMLERİ
+- "9-11" = 09:00-11:00 dağıtım saat aralığı.
+- "Operasyon şeklimiz" = son onaylı genel kurye yapısı + hangi kurye nereye gidiyor + 09:00-11:00 özel dağıtımlar + özel mahalle/cadde kuralları.
+
+
+7) YETKİ
+Patron tarafından açıkça onaylanmış kurallar uygulanır.
+Rümeysa ve kurye.bluecab için verilen yetkiler, Patron onayı kapsamında operasyon değişikliği yapabilme yetkisi olarak değerlendirilir.
+
+
+SON PRENSİP
+ÖNCELİK:
+Gerçek ilçe -> Gerçek saat -> 09:00-11:00 özel kurye -> Özel mahalle/cadde -> Normal kurye -> İkinci kontrol -> Dosya paylaşımı.
+
+
+8) MÜKERRER / REVİZE LİSTE KURALI
+- Aynı firma aynı teslimat günü için ikinci kez liste gönderirse dosya doğrudan ikinci kez rapora eklenmez.
+- Yeni gelen dosya önce aynı günün önceki dosyasıyla karşılaştırılır.
+- İçerik aynıysa dosya MÜKERRER kabul edilir; teslimat ve paket adetleri rapora tekrar yazılmaz.
+- İçerikte değişiklik varsa yeni dosya REVİZE LİSTE kabul edilir.
+- Revize listede eski kayıtlar yeni dosyaya göre güncellenir; yalnız fark kadar değişiklik yapılır ve toplamlar yeniden hesaplanır.
+- Eski dosya arşivde korunur; ancak aktif raporlama toplamında en son onaylı revizyon esas alınır.
+- Revizyon kaydında firma, teslimat tarihi, önceki kaynak dosya, yeni kaynak dosya ve değişiklik bilgisi tutulur.
+
+
+9) GÜNLÜK DOSYA ARŞİVİ KURALI
+- Başlangıç: 01.09.2026.
+- Her firma için firmadan gelen ORİJİNAL Excel dosyası saklanır.
+- Aynı firma için kurye ataması ve son kontrol tamamlandıktan sonra DÜZENLENMİŞ son Excel dosyası da saklanır.
+- Klasör yapısı: YIL -> AY -> GÜN -> FİRMA -> Orijinal / Düzenlenmiş.
+- Revize liste gelirse eski orijinal ve eski düzenlenmiş sürümler silinmez; revizyon sırasıyla arşivde korunur.
+- Aktif operasyon ve raporlama için en son onaylı düzenlenmiş sürüm esas alınır.
+- Arşiv dosyası olmadan günlük operasyon kapanmış sayılmaz.
+
+
+10) DÜZELTME GEÇMİŞİ KURALI
+- Başlangıç: 01.09.2026.
+- İşlenmiş bir teslimatta sonradan kurye, teslimat saati, paket adedi, ilçe/bölge veya başka operasyon alanı değiştirilirse eski değer silinmiş kabul edilmez.
+- Değişiklik geçmişinde mutlaka şu bilgiler tutulur: teslimat/kayıt kimliği, firma, teslimat tarihi, değişen alan, eski değer, yeni değer, değişiklik tarihi-saati, değişikliği yapan kişi ve değişiklik nedeni.
+- Güncel operasyon ve raporlama toplamlarında yalnız en son onaylı değer esas alınır.
+- Geçmiş değişiklik kayıtları silinmez; denetim ve geriye dönük kontrol için korunur.
+- Bir değişiklik rapor toplamını etkiliyorsa ilgili günlük/haftalık/aylık/yıllık raporlar yeniden hesaplanır.
+
+
+11) FİRMA GELİŞ / EKSİK LİSTE TAKİBİ
+- Başlangıç: 01.09.2026.
+- Her operasyon günü aktif her firma için günlük durum kaydı tutulur.
+- Durum seçenekleri: BEKLENİYOR, GELDİ, GEÇ GELDİ, EKSİK, PASİF.
+- Her firma için ilk dosya geliş tarihi-saati kaydedilir.
+- Revize dosya gelirse revizyon tarihi-saati ayrıca kaydedilir.
+- Günlük kapanışta hangi firmaların geldiği, gelmediği, geç geldiği, eksik kaldığı veya pasif olduğu net olarak kayıt altına alınır.
+- Bu kayıtlar aylık/yıllık raporlarda firmanın kaç gün liste gönderdiği, kaç kez geç kaldığı ve kaç gün eksik kaldığı şeklinde raporlanabilir.
+- Firma durumu kaydı olmadan günlük operasyon kapanmış sayılmaz.
+
+
+12) PAKET SAYIM STANDARDI
+- Başlangıç: 01.09.2026.
+- Raporlamada satır sayısı otomatik olarak paket sayısı kabul edilmez.
+- Firma dosyasında Paket Sayısı / Paket Adedi alanı varsa listedeki gerçek toplam bu alandan hesaplanır.
+- Paket adedi alanı olmayan firmalarda firmanın onaylı formatına göre 1 teslimat = 1 paket kabul edilir.
+- Teslimat adedi ile paket adedi ayrı metriklerdir; ikisi birbirine karıştırılmaz.
+- Günlük, aylık ve yıllık firma paket raporları paket adedi üzerinden oluşturulur.
+
+
+13) GERÇEK ALINAN PAKET KURALI
+- Başlangıç: 01.09.2026.
+- Firma listesinde görünen toplam paket ile BLUE CAB tarafından fiziksel olarak teslim alınan gerçek paket adedi ayrı tutulur.
+- Her firma/gün için en az şu üç değer saklanır: Liste Paket Adedi, Gerçek Alınan Paket, Fark.
+- Fark = Gerçek Alınan Paket - Liste Paket Adedi.
+- Ekip günlük gerçek fiziksel paket adedini operasyon sohbetinde bildirir. Örnek: "FitChef gerçek alınan 210".
+- Bildirilen sayı ilgili firma ve teslimat gününün Gerçek Alınan Paket alanına kaydedilir.
+- Liste toplamı değiştirilmez; gerçek alınan sayı ayrı alanda tutulur.
+- Günlük/aylık/yıllık firma raporlarında hem liste paket adedi hem gerçek alınan paket adedi hem fark görülebilir.
+- Finansal/operasyonel gerçek paket toplamı sorulduğunda, aksi belirtilmedikçe Gerçek Alınan Paket esas alınır.
+- Gerçek alınan paket bilgisi henüz bildirilmemişse alan BEKLENİYOR olarak kalır ve günlük kapanış kontrolünde gösterilir.
+
+
+14) KURYE / BÖLGE ANA TABLOSU VE GEÇERLİLİK TARİHİ
+- Başlangıç: 01.09.2026.
+- Hangi kuryenin hangi ilçe, mahalle, cadde veya özel bölgeye baktığı tek bir ana tabloda tutulur.
+- Her kural satırında en az şu alanlar bulunur: Kurye, İlçe, Mahalle/Bölge, Özel Saat Kuralı varsa saat, Başlangıç Tarihi, Bitiş Tarihi varsa, Durum, Kural Notu.
+- Operasyon kuralı değiştiğinde eski kayıt silinmez; eski kaydın bitiş tarihi kapatılır ve yeni kural yeni başlangıç tarihiyle eklenir.
+- Geçmiş tarihli raporlar o tarihte geçerli olan kurye/bölge kuralına göre okunur; bugünkü kurallar geçmişe geriye dönük uygulanmaz.
+- Günlük kurye ataması yapılırken teslimat tarihine göre geçerli olan en güncel aktif kural kullanılır.
+- 09:00-11:00 özel kuralları ve özel mahalle/cadde istisnaları da aynı tarihsel yapı içinde tutulur.
+
+
+15) ATAMA NEDENİ KURALI
+- Başlangıç: 01.09.2026.
+- Her teslimat kaydında kurye bilgisinin yanında Atama Nedeni alanı tutulur.
+- Atama Nedeni, kuryenin hangi kurala göre seçildiğini açıkça belirtir.
+- Standart neden örnekleri: Normal ilçe kuralı, Normal mahalle kuralı, 09:00-11:00 özel kuralı, Özel mahalle/cadde/bölge kuralı, Açık adres düzeltmesi, Not/özel teslimat talebi, Manuel onaylı değişiklik.
+- Birden fazla kural etkiliyse en yüksek öncelikli belirleyici neden yazılır; gerekiyorsa Kural Notu alanında ek açıklama tutulur.
+- Sonradan kurye değişirse Atama Nedeni de yeni onaylı kurala göre güncellenir ve eski değer düzeltme geçmişinde korunur.
+- "Bu teslimat neden bu kuryeye verildi?" sorusu Atama Nedeni ve Kural Notu üzerinden cevaplanabilir olmalıdır.
+
+
+16) GÜNLÜK RAPOR KAPANIŞ KURALI
+- Başlangıç: 01.09.2026.
+- Bir operasyon gününün raporlaması, bir sonraki teslimat gününe ait ilk firma listesi sisteme ulaştığı/paylaşıldığı anda kapanır.
+- Yeni günün ilk listesi, önceki günün kapanış tetikleyicisidir.
+- Kapanışta önceki gün için en az şu özetler sabitlenir: gelen firma sayısı, beklenen/eksik/geç/pasif firma durumu, teslimat adedi, Liste Paket Adedi toplamı, Gerçek Alınan Paket toplamı, fark, aktif kurye sayısı, kurye bazlı paket toplamları, revize/mükerrer liste sayısı ve varsa bekleyen gerçek paket bilgileri.
+- Kapanıştan sonra gelen geçmiş güne ait düzeltme veya revize dosya eski kapanış kaydını silmez; değişiklik Düzeltme Geçmişi / Revizyon kaydı olarak eklenir ve güncel rapor toplamları yeniden hesaplanabilir.
+- İlk kapanış anındaki değerler denetim amacıyla korunur; güncel düzeltilmiş değerler ayrıca erişilebilir olur.
+- Bir sonraki günün ilk listesi işlenmeden önce önceki günün kapanış kontrolü yapılır.
+
+
+17) OTOMATİK RAPOR HESAPLAMA KURALI
+- Başlangıç: 01.09.2026.
+- Ana teslimat kayıtları güncellendikçe firma ve kurye raporları otomatik hesaplanır.
+- Firma günlük raporu: teslimat günü + firma bazında Liste Paket Adedi ve teslimat adedi; ayrıca bildirilen Gerçek Alınan Paket ve fark.
+- Firma aylık raporu: ay + firma bazında Liste Paket Adedi, Gerçek Alınan Paket ve fark; gerçek alınan bilgisi eksik günler ayrıca BEKLEYEN olarak izlenir.
+- Kurye haftalık raporu: yıl + hafta + kurye bazında teslimat kayıtlarındaki Paket Adedi toplamı.
+- Kurye aylık raporu: yıl + ay + kurye bazında teslimat kayıtlarındaki Paket Adedi toplamı.
+- Kurye yıllık raporu: yıl + kurye bazında teslimat kayıtlarındaki Paket Adedi toplamı.
+- Gerçek Alınan Paket firma/gün seviyesinde tutulur; firma ile listedeki fark otomatik hesaplanır. Firma seviyesindeki bu fark, hangi kuryeye ait olduğu ayrıca doğrulanmadıkça kuryelere otomatik dağıtılmaz.
+- Revize veya düzeltme sonrası ana kayıt değişirse bağlı raporlar otomatik yeniden hesaplanır.
+- Şablon, mükerrer veya aktif toplamda sayılmaması gereken kayıtlar rapor hesaplarına dahil edilmez.
+
+
+18) BLUE CAB STANDART OPERASYON SİSTEMİ - NİHAİ ONAY
+- Geçerlilik başlangıcı: 01.09.2026.
+- Bu dokümanda tanımlanan kurye atama, not okuma, gerçek ilçe/saat tespiti, 09:00-11:00 özel kuralları, özel mahalle/cadde kuralları, ikinci kontrol, mükerrer/revize liste yönetimi, günlük dosya arşivi, düzeltme geçmişi, firma geliş/eksik takip sistemi, paket sayım standardı, gerçek alınan paket kaydı, kurye/bölge tarihçesi, atama nedeni, günlük rapor kapanışı ve otomatik raporlama kuralları BLUE CAB'ın standart operasyon sistemidir.
+- 01.09.2026 ve sonrasında işlenen tüm firma listelerinde bu sistem zorunlu olarak uygulanır.
+- Her yeni günlük liste işleminde MASTER kurallar okunur ve listedeki tüm not/açıklama alanları kontrol edilir.
+- Günlük işlem tamamlandığında orijinal ve düzenlenmiş dosya arşivlenir, ana raporlama kayıtları güncellenir ve firma/kurye raporlarına dahil edilir.
+- Bir sonraki günün ilk listesi geldiğinde önceki günün raporu kapanır.
+- Sonradan onaylanan operasyon değişiklikleri geçerlilik tarihiyle MASTER'a eklenir; eski tarihsel kayıtlar silinmez.
+- Bu sistem Patron tarafından 31.08.2026 tarihinde nihai olarak onaylanmıştır.
+
+
+19) KAPALI İLÇE / MAHALLE KURALI
+- Bir ilçe, mahalle veya bölge operasyon açısından KAPALI olarak işaretlenmiş olsa bile ilgili teslimat kaydı kurye atamasız bırakılmaz.
+- Teslimat, o ilçe/mahalle/bölgenin normalde bağlı olduğu ilgili kuryeye atanır.
+- Ancak müşteriye ait satırın Firma İsmi alanına mevcut firma adı yerine "KAPALI" yazılır.
+- Böylece kayıt kurye dağılımında ilgili kuryede görünmeye devam eder, ancak operasyon ekibi teslimatın kapalı bölge kaydı olduğunu Firma İsmi alanından açıkça görür.
+- KAPALI kayıtlar boş kurye, KONTROL veya ayrı bir sahte kurye adına atanmaz.
+- Raporlamada KAPALI durumu ayrıca izlenir; paket ilgili kuryenin operasyon yükünde görünür, ancak kapalı bölge statüsü korunur.
+- Bu kural tüm firmalar için geçerlidir.
+
+
+20) BEŞİKTAŞ KURYE ATAMASI - KALICI ONAY
+- Geçerlilik: 01.09.2026 ve sonrası.
+- Beşiktaş 09:00-11:00 teslimatlarının tamamı -> Özcan Baş.
+- Normal saatte Murat Turan -> Abbasağa, Balmumcu, Cihannüma, Dikilitaş, Gayrettepe, Mecidiye, Muradiye, Sinanpaşa, Türkali, Vişnezade, Yıldız.
+- Normal saatte Abdullah Arkun -> Akat, Arnavutköy, Bebek, Etiler, Konaklar, Kuruçeşme, Kültür, Levazım, Levent, Nisbetiye, Ortaköy, Ulus.
+- Beşiktaş'ta KAPALI olarak tanımlanan bir mahalle/bölge varsa normalde bağlı olduğu kurye yine atanır; Firma İsmi alanına KAPALI yazılır.
+- Bu Beşiktaş dağılımı Patron tarafından 31.08.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+21) GÜNLÜK OPERASYON TAKVİMİ - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Dağıtım operasyonunda depo çıkışı yaklaşık 05:30'da başlar.
+- 1. teslimat saat aralığı: 06:00-07:30.
+- 2. teslimat saat aralığı: 07:30-09:00.
+- 3. teslimat saat aralığı: 09:00-11:00.
+- Sabah dağıtım operasyonu 11:00'da tamamlanır.
+- Sabah dağıtımı Pazartesi-Cumartesi olmak üzere haftada 6 gün yapılır.
+- Pazar sabahı dağıtım yapılmaz.
+- Bu operasyon takvimi Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+22) ÜRÜN TOPLAMA, ANA DEPO AYRIŞTIRMA VE BÖLGE TRANSFERİ - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Üretici firmaların hazır paketleri 02:30-04:00 saatleri arasında firmaların kendi depolarından BLUE CAB araçlarıyla alınır.
+- Tüm firmalardan alınan hazır paketler önce BLUE CAB Maslak ana depoya getirilir.
+- Maslak ana depoda paketler ilçe/bölge bazında ayrıştırılır.
+- Ayrıştırılan paketler +4°C soğuk zincir araçlarıyla ilgili dağıtım bölgelerine transfer edilir.
+- Bölgeye ulaşan araçlardaki paketler, ilgili bölgede bekleyen moto kuryelere teslim edilir ve moto kuryeler dağıtıma çıkar.
+- BLUE CAB operasyon depoları: Maslak ana depo, Kadıköy depo ve Zeytinburnu depo.
+- 09:00-11:00 teslimat penceresine ait paketler Kadıköy ve Zeytinburnu depolarında bekletilebilir.
+- 09:00-11:00 paketleri bu bölge depolarından yaklaşık 08:30'da dağıtıma çıkar.
+- Tüm transfer ve bekletme sürecinde +4°C soğuk zincir korunur.
+- Bu toplama, ayrıştırma ve bölge transfer modeli Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+23) 09:00-11:00 PAKETLERİNİN DEPO BEKLETME DAĞILIMI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Anadolu Yakası 09:00-11:00 teslimat paketleri Kadıköy depoda bekletilir.
+- Beşiktaş, Şişli ve Sarıyer 09:00-11:00 teslimat paketleri Maslak depoda bekletilir.
+- Fatih ve Zeytinburnu 09:00-11:00 teslimat paketleri Zeytinburnu depoda bekletilir.
+- Yukarıdaki gruplar dışında kalan diğer 09:00-11:00 paketleri de Zeytinburnu depoda bekletilir.
+- 09:00-11:00 paketleri ilgili depolardan yaklaşık 08:30'da dağıtıma çıkar.
+- Bu depo bekletme dağılımı Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+26) NORMAL SAAT KURYE ATAMA SEVİYESİ - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Normal saatlerde kurye ataması önce geçerli özel saat ve özel bölge kuralları kontrol edildikten sonra ilçe/mahalle dağılımına göre yapılır.
+- Bir ilçede tek kurye görevliyse ilçenin tamamı o kuryeye atanır.
+- Bir ilçede birden fazla kurye görevliyse atama mahalle/bölge bazında ayrıştırılır.
+- Mahalle bazında tanımlı özel dağılım, genel ilçe kuralından önce uygulanır.
+- Bu atama seviyesi Patron tarafından
+27) SAAT BİLGİSİ BOŞ KAYITLAR - SİSTEM TARAFINDAN ATANAN SAAT STANDARDI
+- Onay tarihi: 03.09.2026.
+- Firma listesinde teslimat saati boş olan kayıtlara BLUE CAB sistemi tarafından 06:30-09:00 saat aralığı atanır.
+- 06:30-09:00 ifadesi, firmadan gelen gerçek müşteri saatini değil, sistem tarafından sonradan atanmış varsayılan operasyon saatini gösterir.
+- Bu nedenle hazırlanan Excel dosyalarında 06:30-09:00 görüldüğünde bunun BLUE CAB tarafından atanmış saat olduğu anlaşılır.
+- Kaynak dosyada gerçek bir teslimat saati varsa bu kural uygulanmaz; firmanın verdiği saat korunur.
+- 06:30-09:00 atanmış kayıtlar 09:00-11:00 özel kurallarına dahil edilmez.
+- Bu saat standardı Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+28) FİRMA TARAFINDAN VERİLEN TESLİMAT SAATİ / ÖZEL SAAT NOTU - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Firma listesinde teslimat saati veya özel saat notu varsa bu bilgi aynen esas alınır.
+- Örnekler: 07:00, 08:30, 07:00-08:00, en geç 07:25 gibi firma kaynaklı saat/talimatlar korunur.
+- Firma tarafından gerçek saat veya saat talimatı verilmiş kayıtlara BLUE CAB'ın varsayılan 06:30-09:00 saati uygulanmaz.
+- Saat bilgisi, saat sütunu ile birlikte teslimat notu ve özel not alanlarından da okun
+29) 09:00-11:00 ÖZEL SAAT EŞLEŞTİRME STANDARDI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Firma tarafından açıkça 09:00-11:00 yazılan kayıtlar 09:00-11:00 özel kurye kuralına girer.
+- Ayrıca teslimat saati veya notu fiilen 09:00-11:00 aralığını ifade ediyorsa aynı özel kural uygulanır.
+- Örnek eşleşmeler: 09:30, 10:00, en erken 09:00, 10:30'a kadar ve benzeri 09:00-11:00 penceresine ait gerçek teslimat ifadeleri.
+- Saatin gerçekten teslimat talimatı olduğu saat sütunu, teslimat notu ve özel not alanları birlikte okunarak doğrulanır.
+- Adres içindeki kapı numarası, sokak numarası veya benzeri sayısal ifadeler saat kabul edilmez.
+- 09:00-11:00 kapsamına giren kayıtlar mevcut özel 09:00-11:00 kurye dağılımına göre atanır.
+- Bu eşleştirme standardı Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+30) 09:00-11:00 SAAT HÜCRESİ GÖRSEL İŞARETLEME STANDARDI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- 09:00-11:00 özel teslimat kapsamına giren tüm kayıtların Saat hücresi sarı dolgu ile işaretlenir.
+- Kaynak dosyada gerçek saat 10:00, 09:30, 10:30 gibi özel bir değer ise bu saat aynen korunur; 09:00-11:00 olarak değiştirilmez.
+- Sarı dolgu yalnızca görsel uyarıdır ve kaynağın gerçek teslimat saatini değiştirmez.
+- 09:00-11:00 kapsamındaki kurye ataması, gerçek saat ifadesi korunarak özel 09:00-11:00 dağılım kurallarına göre yapılır.
+- Bu görsel işaretleme standardı Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+31) AÇIK ADRES ÖNCELİĞİ - İLÇE/SEMT ÇELİŞKİSİ KURALI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Semt/İlçe alanı ile açık adres birbiriyle çelişirse açık adres esas alınır.
+- Açık adreste gerçek ilçe veya mahalle net biçimde tespit edilebiliyorsa kurye ataması bu gerçek konuma göre yapılır.
+- Semt/İlçe alanındaki yanlış veya eski bilgi, açık adresteki net konum bilgisinin önüne geçmez.
+- Örnek: Semt/İlçe Sancaktepe yazsa bile açık adres net biçimde Bağcılar/İstanbul ise kayıt Bağcılar kabul edilir ve Bağcılar kurye kuralı uygulanır.
+- Açık adres yeterince net değilse otomatik tahmin yapılmaz; kayıt kontrol notuna düşürülür.
+- Bu açık adres önceliği kuralı Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+32) ÖZEL TESLİMAT NOTLARI VE GÖRSEL UYARI STANDARDI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Müşteri veya firma tarafından yazılmış özel teslimat notları aynen korunur ve kuryenin görebileceği ilgili not alanında bırakılır.
+- Örnekler: kapıya bırak, güvenliğe teslim, zili çalma, belirli kişiye teslim et, iş yeri, site girişi, telefonla ara ve benzeri özel talimatlar.
+- Özel teslimat notu bulunan kayıtlarda ilgili not hücresi açık kırmızı dolgu ile işaretlenir.
+- Açık kırmızı dolgu yalnızca görsel uyarı amaçlıdır; not metni değiştirilmez veya kısaltılmaz.
+- Özel not, kurye atamasını veya teslimat saatini etkileyen bir talimat içeriyorsa bu talimat ayrıca ilgili operasyon kuralına göre uygulanır.
+- Bu özel not ve görsel uyarı standardı Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+33) KAPALI BÖLGE / EK ÜCRET KAYIT KURALI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Dağıtıma kapalı olarak tanımlı mahalle veya bölgeye ait kayıt listeden çıkarılmaz.
+- Kayıt normal kurye dağılımına göre ilgili kuryeye atanır.
+- Bu kaydın Firma alanına KAPALI yazılır.
+- KAPALI işareti, bu teslimatın standart operasyon dışında ek ücretlendirilecek gönderi olduğunu gösterir.
+- Bu gönderiler firma bazlı ek ücret takibi ve raporlamasında ayrıca sayılır.
+- KAPALI kayıtlarda müşteri/adres
+
+
+34) BLUE CAB GÖREV / YETKİ SINIFLANDIRMASI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Patron: Erol Güler.
+- BLUE CAB ile ilgili görev ve personel soruları aşağıdaki başlıklar birbirine karıştırılmadan ayrı ayrı cevaplanır:
+1. Kurye Atama Listesi: Müşteriye nihai teslimatı yapacak moto kuryenin ilçe, mahalle, cadde, özel bölge ve teslimat saatine göre atama kayıtlarıdır. MASTER kurye/bölge ve özel saat kuralları esas alınır.
+2. Kurye Transfer Listesi: Paketleri Maslak ana depo ile bölge/depolar arasında taşıyan veya bölge paketlerini alan transfer/paket alım sorumlularıdır. Nihai müşteri teslimat kuryesiyle karıştırılmaz.
+3. Bölge Sorumlusu: Bölge yönetiminden sorumlu kişi/kişiler ayrı kategori olarak tutulur. Personel eşleştirmesi Patron onayıyla ayrıca kaydedilir.
+4. Operasyon Ekibi: Günlük operasyonun yürütülmesinde görev alan ekip üyeleri ayrı kategori olarak tutulur. Personel eşleştirmesi Patron onayıyla ayrıca kaydedilir.
+5. Operasyon Sorumlusu: Günlük operasyonun genel sorumlusu ayrı kategori olarak tutulur. Personel eşleştirmesi Patron onayıyla ayrıca kaydedilir.
+6. Kurye Liste Kontrol Görevlisi: Hazırlanan kurye atama listelerini kontrol eden görevli/görevliler ayrı kategori olarak tutulur. Personel eşleştirmesi Patron onayıyla ayrıca kaydedilir.
+7. Firma Liste Sorumlusu: Firmalardan gelen günlük listelerin geliş, eksik, revize ve format takibinden sorumlu kişi/kişiler ayrı kategori olarak tutulur. Personel eşleştirmesi Patron onayıyla ayrıca kaydedilir.
+- BLUE CAB hakkında bu başlıklardan biri sorulduğunda cevap vermeden önce Drive'daki güncel MASTER kayıtları kontrol edilir.
+- Kayıt olmayan kişi/görev eşleşmesi tahmin edilmez; kayıt yoksa açıkça 'henüz tanımlı değil' denir.
+- Kategoriler birbirinin yerine kullanılmaz; özellikle Kurye Atama Listesi ile Kurye Transfer Listesi kesin olarak ayrıdır.
+- Bu sınıflandırma Patron Erol Güler tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+35) AVRUPA YAKASI KURYE ATAMA MASTERI VE İKİ YAKA ONAYI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Bundan sonraki kurye atamalarında Avrupa Yakası için aşağıdaki liste esas alınacaktır.
+- Şişli: Murat Turan.
+- Beyoğlu: Murat Turan.
+- Beşiktaş: Murat Turan / Abdullah Arkun; mevcut mahalle bazlı dağılım kuralları uygulanır. 09:00-11:00: Özcan Baş.
+- Sarıyer: Sedat Açar / Sefer Akdağ / Erkan Ceylan / Ahmet Aksu / Abdullah Arkun / Vedat Açar; mevcut mahalle bazlı dağılım kuralları uygulanır. 09:00-11:00: Özcan Baş.
+- Kağıthane: Murat Turan / Mehmet Koruk; mevcut özel bölgelerde Ahmet Aksu. Mevcut mahalle/özel bölge kuralları uygulanır.
+- Eyüpsultan: Abdurrahim Akcan / Suat Özel; mevcut mahalle bazlı dağılım kuralları uygulanır.
+- Bakırköy: Hasan Uğur Bakırcıoğlu / Suat Özel; mevcut mahalle bazlı dağılım kuralları uygulanır. 09:00-11:00 kapsamında Suat Özel.
+- Küçükçekmece: Hasan Uğur Bakırcıoğlu / Serkan Musaoğlu; mevcut mahalle bazlı dağılım kuralları uygulanır.
+- Beylikdüzü: Murat Açar.
+- Esenyurt: Ramazan Yılmaz.
+- Avcılar: Ahmet Kasım / Ramazan Yılmaz / Yusuf - Mehmet Yılmaz; mevcut mahalle bazlı dağılım kuralları uygulanır.
+- Başakşehir: Abdurrahman Gün / Yusuf - Mehmet Yılmaz / Suat Özel; mevcut mahalle bazlı dağılım kuralları uygulanır.
+- Büyükçekmece: Kemal Çakırca.
+- Bağcılar: Suat Özel.
+- Fatih: Suat Özel. 09:00-11:00 kapsamında Suat Özel.
+- Zeytinburnu: Suat Özel. 09:00-11:00 kapsamında Suat Özel.
+- Güngören / Merter: Suat Özel. 09:00-11:00 kapsamında Suat Özel.
+- Gaziosmanpaşa: Suat Özel.
+- Bayrampaşa: Suat Özel.
+- Bahçelievler: Suat Özel.
+- Esenler: Suat Özel.
+- Avrupa Yakası 09:00-11:00 özel kuralı: Sarıyer + Beşiktaş + Şişli -> Özcan Baş; Bakırköy + Zeytinburnu + Fatih + Merter + Güngören -> Suat Özel. Ayrı bir 09:00-11:00 kuralı tanımlanmamış diğer ilçelerde normal kurye dağılımı devam eder.
+- Anadolu Yakası için 34 numaralı 'ANADOLU YAKASI KURYE ATAMA MASTERI' maddesi, Avrupa Yakası için bu 35 numaralı madde birlikte BLUE CAB'ın geçerli iki yaka kurye atama masterıdır.
+- Günlük atamalarda önce özel saat, özel mahalle/bölge ve açık adres kuralları uygulanır; ardından bu iki yaka master listesi esas alınır.
+- Yeni bir Patron onayıyla değiştirilene kadar tüm günlük kurye atamaları bu Anadolu + Avrupa listelerine göre yapılacaktır.
+- Bu iki yaka kurye atama standardı Patron tarafından 03.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+36) GÜNLÜK FİRMA LİSTESİ / EXCEL DÜZEN STANDARDI - KALICI ONAY
+- Onay tarihi: 03.09.2026.
+- Firma dosyasının mevcut yapısı ve faydalı kaynak alanları mümkün olduğunca korunur.
+- Standart ana alan sırası: Kurye İsmi | Saat | Firma | Müşteri İsmi | Telefon | Semt | Açık Adres | Not.
+- Kurye İsmi en solda tutulur; aynı kuryenin kayıtları alt alta gruplanır.
+- Firma tarafından teslimat saati verilmişse aynen korunur. Saat boşsa BLUE CAB sistem ataması olarak 06:30-09:00 yazılır.
+- 09:00-11:00 kapsamındaki gerçek teslimat saatleri değiştirilmez; Saat hücresi sarı dolgu ile işaretlenir.
+- Firma alanında normal kayıtta gerçek firma adı kullanılır. KAPALI bölge kaydında Firma alanına KAPALI yazılır; kurye ataması korunur.
+- Semt/İlçe ile açık adres çelişirse açık adres önceliği kuralı uygulanır.
+- Özel teslimat notları aynen korunur ve kurye tarafından kolay fark edilmesi için ilgili not hücresi açık kırmızı dolgu ile işaretlenir.
+- Adresler mümkün olduğunca tek satır, temizlenmiş boşluklarla ve okunabilir biçimde tutulur; gereksiz satır sonları kaldırılır.
+- Kurye grupları görsel olarak sade ve kolay ayırt edilebilir biçimde düzenlenir; mümkün olduğunda gri/beyaz grup ayrımı kullanılır.
+- Teslimat adedi ile paket adedi ayrı tutulur. Örneğin aynı müşteriye ait 3 paket, 1 teslimat / 3 paket olarak raporlanır. Ayrı gönderiler ayrı teslimat olarak sayılır.
+- Mümkün olan firma dosyalarında Kurye Özeti oluşturulur ve kurye bazında teslimat/paket adetleri gösterilir.
+- Bu liste düzeni Patron tarafından 03.09.2026 tarihinde kalıcı standart olarak onaylanmıştır ve yeni bir Patron onayıyla değiştirilene kadar günlük Excel hazırlığında uygulanacaktır.
+
+
+
+
+37) GÜNLÜK FİRMA LİSTESİ İŞLEME SIRASI - KALICI ONAY
+- Onay tarihi: 04.09.2026.
+- Günlük Excel hazırlığı başlamadan önce bluecab.dagitim@gmail.com gelen kutusu kontrol edilir.
+- Gelen firma listeleri tespit edilir ve her gelen dosyaya operasyon sıra numarası verilir: 1, 2, 3, 4...
+- Dosyalar bu sıra numarasına göre tek tek işlenir; toplu veya sıra atlayarak kurye ataması yapılmaz.
+- Her dosyada kurye atamasına başlamadan önce Drive'daki güncel BLUE CAB MASTER OPERASYON KURALLARI ve ilgili kurye/bölge kayıtları yeniden kontrol edilir.
+- Kurye ataması yalnız güncel Drive MASTER kayıtlarına göre yapılır; önceki otomatik atama veya hafızadan tahmin esas alınmaz.
+- Kaynak dosyadaki müşteri adı, telefon, açık adres, teslimat saati, özel not ve paket bilgileri kaybedilmeden standart operasyon şablonuna aktarılır.
+- Atama sırası: gerçek ilçe -> gerçek saat -> 09:00-11:00 özel kurye -> özel mahalle/cadde/bölge -> normal kurye -> KAPALI kontrolü -> ikinci kontrol.
+- Bir sıra numarasındaki firma dosyası kurye ataması, Kurye Özeti ve ikinci kontrol tamamlanmadan sonraki sıra numarasına geçilmez.
+- Dosya hazır olarak kaydedilmeden önce müşteri adı/telefon/adres/not alanlarında veri kaybı olmadığı ayrıca kontrol edilir.
+- Günlük çalışma prensibi: Gmail kontrolü -> sıra numarası -> Drive MASTER kontrolü -> tek tek kurye ataması -> Kurye Özeti -> ikinci kontrol -> hazır dosya kaydı.
+- Bu çalışma prensibi Patron tarafından 04.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+
+
+38) FİTCHEF ONAYLI EXCEL / KURYE ATAMA UYGULAMA STANDARDI - KALICI ONAY
+- Onay tarihi: 04.09.2026.
+- 05-06.09.2026 FitChef için son yeniden düzenlenen MASTER kontrollü dosyanın çalışma biçimi bundan sonraki günlük kurye atamalarında uygulama standardı olarak esas alınır.
+- Her dosya orijinal firma kaynağından yeniden işlenir; önceki otomatik atama doğrudan kopyalanmaz.
+- Kaynak müşteri adı, telefon, açık adres, teslimat saati, mahalle/semt, özel teslimat talimatı ve paket bilgileri kaybedilmeden korunur.
+- Açık adres ile mahalle/semt çelişirse açık adres esas alınır; gerçek ilçe ve gerçek mahalle üzerinden atama yapılır.
+- Firma tarafından Saat sütununda veya adres/not içinde verilen gerçek teslimat talimatları (ör. 07:30 öncesi, 06:30 öncesi, 07:00'den önce, 6-7 arası) tespit edilerek Saat alanında korunur. Adres içindeki bina/kapı/sokak numaraları saat kabul edilmez.
+- Gerçek 09:00-11:00 kayıtları özel kurye kurallarına göre atanır ve Saat hücresi sarı işaretlenir. 07:30-09:00 gibi 09:00'da biten aralıklar 09:00-11:00 özel kuralına alınmaz.
+- Beşiktaş, Sarıyer, Eyüpsultan, Kağıthane, Başakşehir ve diğer özel mahalle/bölge ayrımları güncel Drive MASTER kayıtlarına göre satır bazında uygulanır.
+- Standart ana sütun düzeni Kurye İsmi | Saat | Firma | Müşteri İsmi | Telefon | Semt | Açık Adres | Not şeklinde korunur; gerekli operasyon ek alanları sağ tarafta tutulabilir.
+- Aynı kuryenin kayıtları gruplanır. Kurye Özeti ve İkinci Kontrol/Kontrol sekmeleri oluşturulur. Gerektiğinde orijinal kaynak sekmeleri ve Düzeltme Özeti de dosyada korunur.
+- Dosya teslim edilmeden önce toplam kaynak kayıt sayısı ile işlenen kayıt sayısı, boş müşteri, boş telefon, boş kurye, KONTROL kayıtları, gerçek saatler, özel notlar, 09:00-11:00 kayıtları ve kurye özeti ikinci kez doğrulanır.
+- Bu düzen ve kontrol seviyesi Patron tarafından 04.09.2026 tarihinde onaylanmış olup bundan sonraki kurye atamalarında yeni bir Patron onayıyla değiştirilene kadar uygulanacaktır.
+
+
+39) KURYE YAKA NUMARASI (Y.NO) STANDARDI - KALICI ONAY
+- Onay tarihi: 04.09.2026.
+- Günlük kurye atama Excel dosyalarında ana listenin en sağında Y.NO sütunu bulunur.
+- Y.NO değeri, atanmış kurye adına göre aşağıdaki kalıcı eşleştirmeden otomatik yazılır.
+1 - Abdullah Arkun
+2 - Murat Turan
+3 - Ahmet Aksu
+4 - Sedat Açar
+5 - Sefer Akdağ
+6 - Mehmet Koruk
+7 - Erkan Ceylan
+8 - Ahmet Kasım
+9 - Murat Açar
+10 - Hasan Uğur Bakırcıoğlu
+11 - Suat Özel
+12 - Abdurahim Akcan
+13 - Abdurrahman Gün
+14 - Yusuf - Mehmet Yılmaz
+15 - Ramazan Yılmaz
+16 - Kemal Çakırca
+17 - Özcan Baş
+18 - Mutlu Girgin
+19 - Serhat Karataş
+20 - Fatih Aydın
+21 - Murat Karakuş
+22 - Okan Mutlu
+23 - Adem Aşçı
+24 - Salih Berberoğlu
+25 - Mesut Dursun
+26 - Talha Çekici
+27 - Orhan Karasu
+28 - Hamza Talha Erol
+29 - Recep Akdağ
+- Kurye adı değişirse Y.NO da ilgili güncel kurye eşleştirmesine göre yeniden yazılır.
+- Y.NO sütunu teslimat/kurye atama mantığını değiştirmez; operasyon kimlik ve saha ekipman numarası olarak liste düzenine eklenir.
+- Y.NO eşleştirmesi olmayan bir kurye görülürse numara tahmin edilmez; kayıt kontrol notuna düşürülür.
+- Bu Y.NO listesi Patron tarafından 04.09.2026 tarihinde kalıcı operasyon standardı olarak onaylanmıştır ve yeni Patron onayıyla değiştirilene kadar tüm günlük kurye atama listelerinde uygulanacaktır.
+
+
+40) Y.NO REVİZYONU - SERKAN MUSAOĞLU EKLEMESİ - KALICI ONAY
+- Onay tarihi: 04.09.2026.
+- 39 numaralı Y.NO standardı aşağıdaki yeni sıra ile revize edilmiştir.
+- Serkan Musaoğlu Y.NO 11 olarak eklenmiştir.
+- Önceki listede 11 ve sonrasında bulunan tüm Y.NO değerleri bir numara ileri kaydırılmıştır.
+- Güncel Y.NO eşleştirmesi:
+1 - Abdullah Arkun
+2 - Murat Turan
+3 - Ahmet Aksu
+4 - Sedat Açar
+5 - Sefer Akdağ
+6 - Mehmet Koruk
+7 - Erkan Ceylan
+8 - Ahmet Kasım
+9 - Murat Açar
+10 - Hasan Uğur Bakırcıoğlu
+11 - Serkan Musaoğlu
+12 - Suat Özel
+13 - Abdurahim Akcan
+14 - Abdurrahman Gün
+15 - Yusuf - Mehmet Yılmaz
+16 - Ramazan Yılmaz
+17 - Kemal Çakırca
+18 - Özcan Baş
+19 - Mutlu Girgin
+20 - Serhat Karataş
+21 - Fatih Aydın
+22 - Murat Karakuş
+23 - Okan Muslu
+24 - Adem Aşçı
+25 - Salih Berberoğlu
+26 - Mesut Dursun
+27 - Talha Çekici
+28 - Orhan Karasu
+29 - Hamza Talha Erol
+30 - Recep Akdağ
+- Okan için operasyon kayıtlarındaki doğru ad Okan Muslu olarak esas alınır.
+- Bu revizyon 04.09.2026 tarihinden itibaren 39 numaralı eski sıralamanın yerine geçer.
+41) MASTER ATAMALI TEK LİSTE DÜZENİ - KALICI ONAY
+- Onay tarihi: 07.09.2026.
+- BLUE CAB projesinde yeni veya eski sohbet fark etmeksizin “kurye ataması” veya “listeleri düzenle” talimatı verildiğinde bu kural uygulanır.
+- Çalışma başlamadan önce Drive’daki güncel BLUE CAB MASTER OPERASYON KURALLARI ve Kurye_Bolge_Master kayıtları kontrol edilir.
+- Çıktı, 07.09.2026 tarihli MASTER atamalı tek liste çalışma düzenini örnek alır: Kurye İsmi | Saat | Firma | Müşteri İsmi | Telefon | Semt | Açık Adres | Not ve geçerli operasyon ek alanları.
+- Kurye isimleri güncel MASTER kurallara göre gerçek atamalarla yazılır; aynı kuryenin kayıtları alt alta gruplanır.
+- Gerçek ilçe açık adresten doğrulanır; gerçek saat ve notlar korunur; 09:00-11:00 özel kuralları, özel mahalle/cadde/bölge kuralları ve KAPALI kuralları öncelik sırasına göre uygulanır.
+- 09:00-11:00 kapsamındaki saat hücreleri sarı işaretlenir; özel teslimat notları görünür biçimde korunur; güncel Y.NO eşleştirmesi uygulanır.
+- Tahmini veya eski otomatik kurye ataması esas alınmaz. Güncel Drive MASTER kayıtları her çalışmada yeniden kontrol edilir.
+- Bu düzen için aynı kullanıcı talebinde tekrar onay istenmez; yeni bir Patron onayıyla değiştirilene kadar standart günlük çalışma biçimi olarak uygulanır.
+- Bu kural Patron tarafından 07.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+42) EXCEL HÜCRE KENARLIK STANDARDI - KALICI ONAY
+- Onay tarihi: 07.09.2026.
+- Hazırlanan tüm günlük firma listelerinde, birleştirilmiş listelerde ve kurye paylaşım Excel dosyalarında veri alanlarına ince ve okunaklı hücre kenarlıkları uygulanır.
+- Kenarlıklar liste okunabilirliğini artırmak için kullanılır; mevcut özel renk kodları, 09:00-11:00 sarı işaretleri ve özel not uyarıları korunur.
+- Bu kural liste düzeni standardının parçasıdır ve yeni bir Patron onayıyla değiştirilene kadar uygulanır.
+- Bu kural Patron tarafından 07.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+43) KURYE MOBİL PAYLAŞIM / GÖRSEL EXCEL STANDARDI - KALICI ONAY
+- Onay tarihi: 07.09.2026.
+- Kurye paylaşımına hazırlanmış tüm Excel dosyaları, kuryelerin ağırlıklı olarak telefondan açacağı kabul edilerek mobil okunabilirlik önceliğiyle düzenlenir.
+- Başlık satırı belirgin ve sabit tutulur; kaydırma sırasında sütun başlıkları görünür kalır.
+- Yazı boyutu, satır yüksekliği ve sütun genişlikleri telefonda okunabilir olacak şekilde ayarlanır; gereksiz genişlik ve boşluk bırakılmaz.
+- Açık Adres ve Not alanlarında metin kaydırma kullanılır; uzun metinler hücre dışına taşmaz ve mümkün olduğunca az yatay kaydırmayla okunur.
+- Kurye veya operasyon grupları görsel olarak kolay ayırt edilir; sade ve yüksek okunabilirlik sağlayan başlık/grup vurguları kullanılır.
+- Tüm veri alanlarında onaylı ince hücre kenarlıkları korunur.
+- 09:00-11:00 kapsamındaki saat hücrelerinin sarı uyarısı, özel teslimat notlarının görsel uyarıları ve diğer onaylı operasyon renkleri bozulmaz.
+- Kurye bölme işlemlerinde son onaylı özel grup kuralları uygulanır; mobil görsel düzen bu gruplama ve operasyon içeriğini değiştirmez.
+- Bu mobil/görsel düzen, günlük kurye paylaşım dosyalarının standart sunum biçimidir ve yeni bir Patron onayıyla değiştirilene kadar aynen korunur.
+- Bu kural Patron tarafından 07.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+44) KURYE İSMİNE GÖRE AYRI LİSTE + ALT TOPLAM STANDARDI - KALICI ONAY
+- Onay tarihi: 07.09.2026.
+- “Kurye böl / kurye kurye böl” işleminde bölme yalnız ana listedeki Kurye İsmi alanına göre yapılır.
+- Her kurye kendi adına ait ayrı liste/dosya olarak hazırlanır; farklı kuryeler aynı bölge, hat veya operasyon grubu gerekçesiyle tek listede birleştirilmez.
+- Daha önce tanımlanan Sarıyer tek liste, Avcılar+Beylikdüzü tek liste, Esenyurt+Bahçeşehir+Büyükçekmece+Kayaşehir+Başakşehir tek liste ve Salih+Okan+Orhan+Murat Karakuş tek liste gibi kurye bölme/birleştirme kuralları 07.09.2026 itibarıyla İPTAL edilmiştir.
+- 43 numaralı mobil/görsel Excel standardındaki “son onaylı özel grup kuralları uygulanır” hükmü bu maddeyle yürürlükten kaldırılmıştır. Mobil/görsel format aynen korunur ancak kurye bölme sadece kurye ismine göre yapılır.
+- Her kurye listesinin en altında o kuryeye ait TOPLAM TESLİMAT ve TOPLAM PAKET sayıları görünür şekilde yazılır.
+- Teslimat ve paket adetleri ayrı metrikler olarak hesaplanır; paket adedi mevcut P.Adet/Paket Adedi alanından toplanır, bu alan yoksa ilgili firma için geçerli paket sayım standardı uygulanır.
+- Başlık sabitleme, mobil okunabilirlik, uygun sütun genişlikleri, metin kaydırma, ince kenarlıklar, 09:00-11:00 sarı uyarıları ve özel not renkleri aynen korunur.
+- Bu madde, kurye paylaşımında bundan sonraki son geçerli kurye bölme standardıdır ve yeni bir Patron onayıyla değiştirilene kadar uygulanır.
+- Bu kural Patron tarafından 07.09.2026 tarihinde kalıcı olarak onaylanmıştır.
+45) KURYE BÖL ELEKTRONİK TABLO GÜNLÜK RAPOR STANDARDI - KALICI / KATI KURAL
+- Onay tarihi: 07.09.2026.
+- Bundan sonra hazırlanacak tüm “kurye böl / kurye kurye böl” elektronik tablolarında, kurye sekmelerine ek olarak zorunlu bir GÜNLÜK RAPOR bölümü bulunur.
+- Günlük Rapor bölümünde en az şu üst göstergeler yer alır: Toplam Teslimat, Toplam Paket, Aktif Kurye Sayısı, Firma Sayısı ve 09:00-11:00 teslimat/paket toplamı.
+- KURYE ÖZETİ zorunludur. En az: Y.NO, Kurye İsmi, Teslimat Adedi, Paket Adedi ve 09:00-11:00 teslimat/paket adedi gösterilir.
+- FİRMA ÖZETİ zorunludur. En az: Firma İsmi, Teslimat Adedi, Paket Adedi, 09:00-11:00 teslimat/paket adedi ve varsa KAPALI kayıt adedi gösterilir.
+- Günlük Rapor, Kurye Özeti ve Firma Özeti ana listedeki aynı veriden hesaplanır; toplamlar birbiriyle tutarlı olmak zorundadır.
+- Teslimat adedi ile paket adedi ayrı metriklerdir. Paket toplamı mevcut P.Adet/Paket Adedi alanından hesaplanır; alan yoksa ilgili firma için geçerli paket sayım standardı uygulanır.
+- Bu rapor sekmeleri mobil okunabilir, sade ve görsel olarak kolay takip edilir biçimde hazırlanır; mevcut mobil/görsel Excel standardı, ince kenarlıklar, 09:00-11:00 sarı uyarıları ve özel not renkleri korunur.
+- Her kurye kendi ismine göre ayrı liste olmaya devam eder ve her kurye listesinin altındaki TOPLAM TESLİMAT / TOPLAM PAKET satırı korunur.
+- Bu madde 44 numaralı son kurye bölme standardını tamamlayan zorunlu raporlama kuralıdır. “Kurye böl” dosyası bu üç özet olmadan tamamlanmış sayılmaz.
+- Bu kural Patron tarafından 07.09.2026 tarihinde kalıcı ve katı operasyon standardı olarak onaylanmıştır; yeni bir Patron onayıyla değiştirilene kadar tüm sonraki kurye böl elektronik tablolarında zorunlu olarak uygulanır.
+46) KURYE BÖL / ZIP ZORUNLU UYGULAMA KONTROL LİSTESİ - KALICI MASTER KURAL
+- Onay tarihi: 08.09.2026.
+- Bu madde, 42, 43, 44 ve 45 numaralı kuralları tek uygulama kontrol listesinde birleştirir ve tüm “kurye böl / kurye kurye böl / ZIP hazırla” işlemlerinde zorunlu olarak kontrol edilir.
+- Her kurye yalnız Kurye İsmi alanına göre kendi ayrı Excel dosyasında hazırlanır. Farklı kuryeler aynı bölge veya hat gerekçesiyle tek dosyada birleştirilmez.
+- Her kurye dosyası ZIP içinde ayrı Excel dosyası olarak yer alır.
+- Müşteri İsmi, Telefon, kaynakta bulunan Zil bilgisi, Firma, P.Adet/Paket Adedi, Semt, Saat, Açık Adres ve Not alanları kaybedilmeden korunur. Kaynakta bulunmayan veri uydurulmaz.
+- Telefon numarası telefondan okunacak biçimde tutulur; bilimsel gösterime dönüşmez, baştaki 0 kaybolmaz ve sütun genişliği tam numarayı gösterecek şekilde ayarlanır.
+- Kurye listelerinin içinde operasyon sıralaması korunur. Kartal -> Pendik -> Maltepe -> Tuzla kayıtları mümkün olduğunca peş peşe tutulur; 09:00-11:00 teslimatlar kendi özel saat kurallarına uygun ve listenin operasyon akışında ayrı/son blok olarak düzenlenir.
+- 09:00-11:00 kapsamındaki Saat hücreleri sarı işaretli kalır; özel teslimat notlarının onaylı görsel uyarıları korunur.
+- Tüm veri alanlarında ince ve okunaklı hücre kenarlıkları uygulanır.
+- Başlık satırı sabitlenir; yazı boyutu, satır yüksekliği, sütun genişliği ve metin kaydırma kuryenin telefondan kolay okuyacağı mobil formata göre ayarlanır.
+- Her kurye listesinin altında TOPLAM TESLİMAT ve TOPLAM PAKET ayrı ayrı gösterilir. Paket toplamı satır sayısından değil P.Adet/Paket Adedi alanından hesaplanır; alan yoksa firma için geçerli paket sayım standardı uygulanır.
+- Toplu elektronik tabloda GÜNLÜK RAPOR, KURYE ÖZETİ ve FİRMA ÖZETİ zorunludur. Toplam Teslimat, Toplam Paket, Aktif Kurye Sayısı, Firma Sayısı, 09:00-11:00 toplamları ve ilgili özet kırılımları ana veriyle birebir tutarlı olmalıdır.
+- Son kontrolde ana liste toplam teslimat/paket sayısı ile kurye dosyalarının toplamı karşılaştırılır; kayıt kaybı, mükerrer kayıt veya başka kuryenin satırının yanlış dosyada bulunması kabul edilmez.
+- Kurye dosyası veya ZIP bu kontrol maddelerinin tamamı doğrulanmadan “hazır” sayılmaz.
+- Bu kural Patron tarafından 08.09.2026 tarihinde kalıcı MASTER kuralı olarak onaylanmıştır ve yeni bir Patron onayıyla değiştirilene kadar zorunlu olarak uygulanır.
+47) MASTER KURAL DEĞİŞİKLİĞİ YETKİSİ - KALICI / KATI KURAL
+- Onay tarihi: 08.09.2026.
+- BLUE CAB dağıtım operasyonunda MASTER operasyon kurallarını değiştirme, ekleme, iptal etme veya kalıcı hale getirme yetkisi yalnız Patron Erol Güler'e aittir.
+- Patron Erol Güler dışında hiçbir ekip üyesinin talimatı doğrudan kalıcı MASTER kural değişikliği olarak uygulanmaz veya kaydedilmez.
+- Diğer ekip üyeleri kural değişikliği, yeni firma kuralı veya sistem değişikliği talep ederse işlem durdurulur ve Patron onayı istenir.
+- Bu madde, MASTER'ın 7 numaralı YETKİ bölümünde Rümeysa ve kurye.bluecab için operasyon değişikliği yapabilme yetkisi veren önceki hükmü 08.09.2026 itibarıyla yürürlükten kaldırır.
+- Ekip üyeleri mevcut onaylı kurallara göre günlük operasyon işlemlerini yürütebilir; ancak mevcut kuralların içeriğini değiştiremez.
+- Patron tarafından açıkça onaylanan yeni veya revize kurallar geçerlilik tarihiyle MASTER'a eklenebilir.
+- Bu yetki kuralı yeni bir Patron onayıyla değiştirilene kadar geçerlidir.
+- Bu kural Patron Erol Güler tarafından 08.09.2026 tarihinde kalıcı ve katı MASTER kuralı olarak onaylanmıştır.
+48) VİDEO REFERANSLI MOBİL KURYE LİSTE GÖRÜNÜMÜ - SON GEÇERLİ SUNUM STANDARDI
+- Onay tarihi: 08.09.2026.
+- 08.09.2026 tarihinde Patron tarafından paylaşılan ekran videosundaki son kurye liste görünümü, bundan sonraki kurye paylaşım dosyaları için görsel referans kabul edilir.
+- Her kurye ayrı Excel dosyası olarak hazırlanır ve dosya/çalışma sayfası açıldığında kurye adı üst bölümde belirgin şekilde görünür.
+- Mobil görünüm videodaki gibi telefondan rahat okunacak ölçülerde tutulur; başlıklar, sütun genişlikleri, satır yükseklikleri, metin kaydırma ve hücre kenarlıkları bu okunabilirliği bozmayacak şekilde uygulanır.
+- Videodaki görsel düzen korunurken müşteri bilgileri eksik bırakılmaz. Kaynak dosyada bulunan Müşteri İsmi alanı her kurye listesine mutlaka taşınır ve son kontrolde boş/eksik müşteri isimleri ayrıca kontrol edilir.
+- Kaynakta bulunan Telefon ve Zil bilgileri de kaybedilmeden korunur; telefon numaraları tam ve mobilde okunabilir formatta gösterilir.
+- Y.NO, Kurye, Firma, P.Adet/Paket Adedi, Semt, Saat, Açık Adres ve Not gibi onaylı operasyon alanları korunur; müşteri ismi bu görünümde zorunlu alan olarak yer alır.
+- 09:00-11:00 sarı saat uyarıları, özel not renkleri, ince hücre kenarlıkları, operasyon sıralaması ve alt TOPLAM TESLİMAT / TOPLAM PAKET satırları aynen korunur.
+- Bu madde 43, 44, 45 ve 46 numaralı kuralları görsel sunum açısından tamamlar. Çelişki halinde müşteri bilgisinin korunması ve mobil okunabilirlik önceliklidir.
+- Bu görünüm Patron tarafından 08.09.2026 tarihinde son geçerli mobil kurye liste sunum standardı olarak onaylanmıştır ve yeni bir Patron onayıyla değiştirilene kadar uygulanır
+49) GÜNLÜK ANA LİSTE SÜTUN SIRASI VE KENARLIK STANDARDI - KALICI ONAY
+- Onay tarihi: 08.09.2026.
+- Günlük kurye atama ve düzenlenmiş ana Excel listelerinde sütun sırası aynen şu şekilde uygulanır: Y.NO | KURYE | FİRMA | MÜŞTERİ | TEL | ADET | SEMT | SAAT | AÇIK ADRES | NOT.
+- Bu ana liste düzenine ayrıca "Gün" sütunu eklenmez.
+- Kaynak dosyada bulunan müşteri, telefon, adet/paket, semt, saat, açık adres ve not bilgileri kaybedilmeden bu sıraya aktarılır.
+- Başlık satırı ve tüm dolu veri hücrelerine ince ve okunaklı hücre kenarlığı uygulanır.
+- 09:00-11:00 kapsamındaki Saat hücrelerinin sarı uyarısı ve özel teslimat notlarının onaylı görsel uyarıları korunur.
+- Bu sütun sırası ve kenarlık standardı Patron tarafından 08.09.2026 tarihinde kalıcı operasyon standardı olarak onaylanmıştır ve yeni bir Patron onayıyla değiştirilene kadar uygulanır.
+
+
+50) MOTOR KURYE ODAKLI PAYLAŞIM DÜZENİ - KALICI / SON GEÇERLİ SUNUM STANDARDI
+- Onay tarihi: 10.09.2026.
+- Patron tarafından 10.09.2026 tarihinde onaylanan motor kurye odaklı Excel görünümü, bundan sonraki tüm kurye kurye bölme ve kurye paylaşım dosyalarında son geçerli sunum standardıdır.
+- Amaç, moto kuryenin dosyayı telefondan açtığında ilk bakışta teslimat aksiyonunu görebilmesidir.
+- Her kurye yine yalnız kendi adına ait ayrı Excel dosyası olarak hazırlanır; ZIP içinde farklı kuryeler birleştirilmez.
+- Dosyanın en üstünde kurye adı büyük ve belirgin biçimde yer alır. Hemen altında en az TOPLAM TESLİMAT, TOPLAM PAKET ve 09:00-11:00 toplamı gösterilir.
+- Kurye paylaşım dosyasında bilgi önceliği motor kurye kullanımına göre düzenlenir. Görsel olarak ilk bakışta Saat, Müşteri İsmi ve Telefon öne çıkar; ardından Firma, Semt, Açık Adres ve Not bilgileri kolay okunur biçimde gelir. Y.NO ve gerekli diğer operasyon alanları korunur ancak mobil aksiyon alanlarının önüne geçmez.
+- Müşteri İsmi hiçbir koşulda çıkarılmaz veya eksik bırakılmaz. Telefon tam okunur, baştaki 0 korunur ve bilimsel gösterime dönüşmez. Kaynakta bulunan Zil/Şifre bilgisi kaybedilmez.
+- Açık Adres ve Not sütunlarında wrap text uygulanır; uzun metinler telefonda okunabilir satır yükseklikleriyle gösterilir.
+- 09:00-11:00 teslimatlar kurye listesinin sonunda ayrı bir blok halinde tutulur ve Saat hücreleri sarı uyarıyla gösterilir. Kaynaktaki gerçek saat değeri değiştirilmez.
+- Kritik teslimat notları ve özel talimatlar belirgin görsel uyarıyla korunur; not metni kısaltılmaz veya silinmez.
+- Aynı kurye içinde yakın/aynı bölge kayıtları mümkün olduğunca peş peşe tutulur; onaylı operasyon sıralaması, özel saat kuralları ve rota mantığı bozulmaz.
+- Başlık satırı sabitlenir; sütun genişlikleri, satır yükseklikleri, yazı boyutu ve kenarlıklar telefondan kullanım için optimize edilir.
+- Bu sunum standardı yalnız görünümü değiştirir; kurye atama kuralları, Ahmet Aksu dahil güncel özel bölge/saat kuralları, paket hesapları, KAPALI kuralları ve MASTER öncelik sırası aynen uygulanır.
+- Günlük Rapor, Kurye Özeti ve Firma Özeti ana veriyle birebir mutabık olmak zorundadır. Özellikle 09:00-11:00 sayıları teslimat sayısı olarak ayrı hesaplanır ve paket adediyle karıştırılmaz.
+- Kurye dosyaları paylaşılmadan önce toplam teslimat, toplam paket, 09:00-11:00 adedi, müşteri/telefon veri bütünlüğü ve yanlış kurye dosyasına kayıt düşmediği yeniden doğrulanır.
+- Bu madde 43, 44, 45, 46, 48 ve 49 numaralı maddeleri motor kurye kullanımı açısından tamamlar; görsel sunum açısından çelişki halinde bu 50 numaralı son onaylı standart uygulanır.
+- Bu kural Patron Erol Güler tarafından 10.09.2026 tarihinde kalıcı olarak onaylanmıştır ve yeni bir Patron onayıyla değiştirilene kadar zorunlu olarak uygulanır.
+51) HER KURYE LİSTESİ ALT FİRMA ÖZETİ VE TOPLAM STANDARDI - KALICI / KATI KURAL
+- Onay tarihi: 11.09.2026.
+- Bu kural tüm kurye kurye bölme, kurye paylaşım ve ZIP içindeki ayrı kurye Excel dosyalarında zorunlu olarak uygulanır.
+- Her kurye listesinin veri satırları bittikten sonra mevcut TOPLAM TESLİMAT ve TOPLAM PAKET bilgileri korunur.
+- Bu toplamların hemen altında FİRMA ÖZETİ yer alır.
+- FİRMA ÖZETİ, yalnız o kurye listesinde bulunan paketleri firma bazında ayrı ayrı gösterir. Örnek: FitChef: 5 | FedBOX: 3.
+- Firma bazlı sayılar teslimat satırı sayısından değil, geçerli P.Adet/Paket Adedi ve firma paket sayım standardından hesaplanır.
+- FİRMA ÖZETİ altında genel TOPLAM PAKET tekrar gösterilir. Örnek: FitChef: 5 | FedBOX: 3 | TOPLAM: 8.
+- Firma özetindeki firma paket adetleri toplamı, aynı kurye listesindeki TOPLAM PAKET ile birebir eşit olmak zorundadır.
+- Hiçbir firma atlanamaz; aynı firmanın adı farklı yazımlarla gelirse günlük ana verideki doğrulanmış firma adına göre tek başlık altında birleştirilir.
+- Bu alt özet mobil okunabilir, sade ve belirgin biçimde hazırlanır; motor kurye odaklı son geçerli sunum standardını bozmaz.
+- Kurye dosyası, firma özeti ve toplam mutabakatı kontrol edilmeden hazır sayılmaz.
+- Bu kural Patron Erol Güler tarafından 11.09.2026 tarihinde kalıcı ve katı MASTER kuralı olarak onaylanmıştır; yeni bir Patron onayıyla değiştirilene kadar zorunlu olarak uygulanır.
+
+
+
+
+52) ANADOLU YAKASI NORMAL KURYE ATAMA MASTERI - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Ataşehir normal dağıtım tamamı: Adem Aşçı - Y24. Ataşehir 09:00-11:00: Hamza Talha Erol - Y29.
+- Kadıköy normal dağıtım: Acıbadem ve Koşuyolu -> Serhat Karataş - Y20. Kozyatağı, Fikirtepe, Göztepe, Erenköy, Suadiye, Feneryolu, Bostancı ve bunlar dışında kalan Kadıköy mahalleleri -> Salih Berberoğlu - Y25. Kadıköy 09:00-11:00 -> Recep Akdağ - Y30.
+- Üsküdar normal dağıtım tamamı: Serhat Karataş - Y20. Üsküdar 09:00-11:00 -> Okan Muslu - Y23.
+- Ümraniye normal dağıtım tamamı: Fatih Aydın - Y21. Ümraniye 09:00-11:00 -> Orhan Karasu - Y28.
+- Maltepe normal dağıtım tamamı: Talha Çekici - Y27. Maltepe 09:00-11:00 da Talha Çekici - Y27.
+- Kartal normal dağıtım tamamı: Talha Çekici - Y27.
+- Pendik normal dağıtım tamamı: Talha Çekici - Y27.
+- Tuzla normal dağıtım tamamı: Talha Çekici - Y27; KAPALI mahalle kayıtları aşağıdaki KAPALI kuralına tabidir.
+- Sancaktepe normal dağıtım tamamı: Murat Karakuş - Y22.
+- Sultanbeyli normal dağıtım tamamı: Okan Muslu - Y23.
+- Çekmeköy normal dağıtım tamamı: Okan Muslu - Y23; KAPALI mahalle kayıtları aşağıdaki KAPALI kuralına tabidir.
+- Beykoz normal dağıtım tamamı: Mutlu Girgin - Y19; KAPALI mahalle kayıtları aşağıdaki KAPALI kuralına tabidir.
+- Şile: KAPALI.
+- Adalar: KAPALI.
+- Bu dağılım günlük atamalarda tekrar Patron'a sorulmaz; yalnız yeni bir Patron onayıyla değiştirilir.
+
+
+53) KAPALI BÖLGE UYGULAMA REVİZYONU - SAAT ALANINDA KAPALI - KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- KAPALI ilçe/mahalle/bölge kaydı listeden çıkarılmaz ve yok sayılmaz.
+- Kayıt, bölgenin normalde bağlı olduğu ilgili kuryeye atanır.
+- KAPALI statüsü bundan sonra müşterinin SAAT alanında açıkça KAPALI yazılarak gösterilir.
+- Bu 11.09.2026 revizyonu, eski MASTER maddelerinde KAPALI bilgisinin Firma alanına yazılmasını söyleyen hükümlerle çelişirse SAAT alanında KAPALI hükmü önceliklidir.
+- Müşteri adı, telefon, gerçek firma adı, açık adres, not ve paket adedi korunur.
+- KAPALI kayıtlar boş kurye veya KONTROL olarak bırakılmaz.
+- KAPALI bölge normal kurye atamasını değiştirmez; yalnız operasyon statüsünü işaretler.
+
+
+54) 11.09.2026 PATRON ONAYLI KAPALI GENEL SIRA NUMARALARI - KALICI KAYIT
+- Aşağıdaki genel sıra numaraları İstanbul İlçe/Mahalle Kod MASTER kaynağındaki konum satırlarına göre KAPALI kabul edilir.
+- Beykoz KAPALI genel sıra numaraları: 628, 629, 630, 631, 632, 633, 634, 639, 645, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668. Riva için daha önce onaylanmış KAPALI kuralı ayrıca aynen geçerlidir.
+- Çekmeköy KAPALI genel sıra numaraları: 671, 678, 679, 680, 681, 682, 683.
+- Sancaktepe KAPALI genel sıra numaraları: 796, 797, 799, 800.
+- Tuzla KAPALI genel sıra numaraları: 881, 882, 883, 884, 885, 887, 888, 894, 895, 896, 897, 898, 899, 900, 901.
+- Başakşehir KAPALI genel sıra numaraları: 98, 99, 101, 108.
+- Eyüpsultan KAPALI genel sıra numaraları: 335, 336, 337, 338, 339, 340, 341.
+- Sultangazi KAPALI genel sıra numaraları: 552, 554, 555, 556, 559, 563.
+- Şile ilçesinin tamamı KAPALI; Adalar ilçesinin tamamı KAPALI.
+- Bu kayıtlar ilgili konum kod kaynağıyla eşleştirilerek uygulanır; numaradan mahalle adı tahmin edilmez.
+- KAPALI kayıt geldiğinde 53 numaralı kural uygulanır: ilgili normal kurye atanır ve Saat alanına KAPALI yazılır.
+
+
+55) KURYE GÖSTERİM STANDARDI - İSİM ÖNCE Y.NO SONRA - KALICI / KATI KURAL
+- Kurye adı her zaman önce, Y.No kodu isimden sonra yazılır.
+- Standart: Ahmet Aksu - Y3 | Recep Akdağ - Y30 | Özcan Baş - Y18.
+- Y.No kurye adının önünde kullanılmaz.
+- Bu standart tüm ana listeler, kurye dosyaları, raporlar ve MASTER gösterimlerinde uygulanır.
+
+
+56) 11.09.2026 MASTER KONSOLİDASYON HÜKMÜ
+- 52, 53, 54 ve 55 numaralı maddeler 11.09.2026 tarihli Patron onaylarını fiziksel MASTER kaydına taşır.
+- Önceki maddelerle çelişki halinde daha yeni tarihli ve daha özel olan 52-55 numaralı hükümler önceliklidir.
+- Günlük operasyon başlamadan önce bu güncel MASTER okunur; Anadolu normal dağılımı tekrar kullanıcıya sorulmaz.
+- Bu kurallar yeni bir Patron onayıyla değiştirilene kadar kalıcıdır.
+
+
+57) AHMET AKSU 09:00-11:00 BÖLGE ÖNCELİĞİ - KALICI / KATI KURAL
+- Patron Erol Güler tarafından 10.09.2026 tarihinde onaylanmıştır ve 11.09.2026 konsolidasyonunda fiziksel MASTER'a işlenmiştir.
+- Ahmet Aksu - Y3 için açıkça atanmış bölgelerde 09:00-11:00 teslimatlar Ahmet Aksu - Y3'e atanır; eski genel Sarıyer 09:00-11:00 -> Özcan Baş - Y18 kuralı bu bölgelerde uygulanmaz.
+- Kapsam: Sarıyer Ayazağa, Huzur, Maslak; Ayazağa Kemerburgaz Caddesi; Çamlıvadi; Kağıthane/Hamidiye tarafındaki tanımlı Anadolu Caddesi bölgesi.
+- Vadi İstanbul / Vadi Ist. / Azerbaycan Caddesi gibi adresler gerçek konum doğrulamasıyla Maslak/Ayazağa bölgesine denk geliyorsa Ahmet Aksu - Y3 kapsamında değerlendirilir.
+- 'Anadolu Caddesi' ifadesi İstanbul genelinde körlemesine uygulanmaz; gerçek ilçe/mahalle hiyerarşisiyle doğrulanır.
+- Bu madde Sarıyer genel 09:00-11:00 kuralına göre daha özel ve daha yenidir; çelişkide bu madde önceliklidir.
+
+
+58) KAPALI KAYNAK MUTABAKATI VE BEYKOZ SAYIM DÜZELTMESİ - KALICI KAYIT
+- 11.09.2026 tarihinde 08 - İstanbul İlçe Mahalle Kod MASTER kaynağındaki Genel Sıra satırları fiziksel olarak KAPALI işaretlenmiş ve 54 numaralı MASTER listesiyle mutabakat sağlanmıştır.
+- Beykoz için 54 numaralı maddede listelenen benzersiz Genel Sıra kaydı sayısı 31'dir. Riva Genel Sıra 658 bu 31 kaydın içindedir; Riva'yı ayrıca ikinci kez sayarak 32 denmez.
+- Günlük operasyonda sayıdan daha önemli olan kaynak satırı eşleşmesidir; Genel Sıra + İlçe + Mahalle birlikte doğrulanır.
+- 08 kaynağında KAPALI statüsü Durum alanında tutulur; günlük müşteri Excelinde ise 53 numaralı kurala göre normal kurye korunur ve Saat alanına KAPALI yazılır.
+
+
+59) KAYNAK / MASTER TEK DOĞRULUK VE GERİ DÖNMEME STANDARDI - KALICI / KATI KURAL
+- Operasyon kuralları için ana otorite BLUE CAB MASTER OPERASYON KURALLARI; İstanbul ilçe/mahalle/genel sıra ve kod eşleşmesi için ana otorite 08 - İstanbul İlçe Mahalle Kod MASTER kaynağıdır.
+- Günlük işlemde önce canlı MASTER ve canlı 08 kaynak kontrol edilir; eski sohbet cevabı, eski Excel otomatik ataması veya hafızadan tahmin kaynak yerine kullanılmaz.
+- Aynı konu daha önce Patron tarafından kesin onaylanıp canlı MASTER/kaynağa işlendi ise kullanıcıya tekrar sorulmaz.
+- Çelişkide daha yeni tarihli ve daha özel Patron onayı uygulanır; eski hüküm tarihsel kayıt olarak korunur ancak operasyonel önceliği kaybeder.
+- Kurye gösterimi her yerde İsim - Y.No biçimindedir.
+- KAPALI kayıt listeden silinmez; normal kurye atanır; günlük Excelde Saat=KAPALI uygulanır; gerçek firma adı korunur.
+- Her kurye dosyasında alt firma paket özeti ve toplam paket mutabakatı zorunludur.
+- Dosya ancak kaynak kayıt sayısı, teslimat/paket toplamı, kurye/Y.No, saat, KAPALI, özel not, 09:00-11:00 ve firma özeti kontrolleri geçtikten sonra HAZIR kabul edilir.
+- Bu standardın amacı aynı onaylı konular için tekrar tekrar geriye dönülmesini ve yeniden karar verilmesini engellemektir.
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+60) KAPALI İLÇE / MAHALLE GÖSTERİM LİSTESİ - 11.09.2026 KALICI KAYIT
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- KAPALI liste raporlanırken ilçenin tamamı KAPALI ise mahalleler tek tek yazılmaz; ilçe “TAMAMI KAPALI” olarak gösterilir. İlçenin yalnız bazı mahalleleri KAPALI ise mahalleler ayrıntılı yazılır.
+- TAMAMI KAPALI: Arnavutköy, Çatalca, Silivri, Adalar, Şile.
+- Başakşehir: Altınşehir, Güvercintepe, Şahintepe, Şamlar.
+- Eyüpsultan: Ağaçlı, Akpınar, Çiftalan, Işıklar, İhsaniye, Odayeri, Pirinççi.
+- Sarıyer: Garipçe, Gümüşdere, Kısırkaya, Rumelikavağı.
+- Sultangazi: Sultançiftliği, Cebeci, Eski Habipler, Habibler, Yayla, Zübeyde Hanım.
+- Beykoz: Merkez, Yalıköy, Baklacı, Çengeldere, Çiftlik, Fatih, Yavuz Selim, Yeni Mahalle, Alibahadır, Anadolufeneri, Bozhane, Cumhuriyet, Göllü, İshaklı, Kaynarca, Kılıçlı, Mahmutşevketpaşa, Öğümce, Paşamandıra, Polonezköy, Poyrazköy, Riva, Zerzavatçı, Akbaba, Anadolu Kavağı, Çamlıbahçe, Dereseki, Elmalı, Görele, Ortaçeşme, Örnekköy, Tokatköy.
+- Çekmeköy: Ekşioğlu, Hamidiye, Hüseyinli, Koçullu, Ömerli, Reşadiye, Sırapınar, Aydınlar.
+- Sancaktepe: İnönü, Sarıgazi, Hilal, Merve, Mevlana, Paşaköy.
+- Tuzla: Akfırat, Tepeoren İTOSB, Tepeören, Aydınlı - Birlik OSB, Aydınlı - İstanbul AYOSB, Aydınlı SB, Aydınlı-KOSB, Mimar Sinan, Şifa, Anadolu, Deri OSB, Fatih, Mescit, Orhanlı, Orta.
+- Bu gösterim listesi canlı 08 - İstanbul İlçe Mahalle Kod MASTER kaynağında KAPALI görünen kayıtların 11.09.2026 tarihli görünümünü esas alır. Günlük uygulamada canlı MASTER + canlı 08 kaynak önceliği korunur.
+
+
+61) KURYE İSİM REVİZYONU - YUSUF - MEHMET YILMAZ - KALICI KAYIT
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Kurye adı “Yusuf Yılmaz” yerine bundan sonra “Yusuf - Mehmet Yılmaz” olarak kullanılacaktır.
+- Y.NO değişmez: Yusuf - Mehmet Yılmaz - Y15.
+- Bu isim tüm kurye atamalarında, günlük Excel dosyalarında, kurye dosyalarında, raporlarda ve MASTER gösterimlerinde esas alınır.
+- Eski “Yusuf Yılmaz” adı tarihsel kayıtlarda görülebilir; güncel operasyonel gösterimde “Yusuf - Mehmet Yılmaz” kullanılır.
+
+
+62) BAŞAKŞEHİR ÖZEL KURYE ATAMA DÜZELTMESİ - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Başakşehir ilçesinde Ziya Gökalp Mahallesi içindeki Mall of İstanbul ve Ziya Gökalp Mahallesi kapsamındaki teslimatlar Suat Özel - Y12 olarak atanır.
+- Bu kayıtlar Abdurrahman Gün'e atanmaz.
+- Başakşehir / Bahçeşehir 1. Kısım Mahallesi teslimatları Yusuf - Mehmet Yılmaz - Y15 olarak atanır.
+- Bu iki özel mahalle kuralı, Başakşehir için kullanılan genel veya eski kurye dağılım ifadelerinden önceliklidir.
+- Günlük atama motoru Başakşehir kaydında önce mahalleyi doğrular; Ziya Gökalp ise Suat Özel - Y12, Bahçeşehir 1. Kısım ise Yusuf - Mehmet Yılmaz - Y15 uygulanır.
+- Canlı 08 - İstanbul İlçe Mahalle Kod MASTER kaynağındaki mevcut satırlar da bu kuralla uyumludur: Ziya Gökalp = Suat Özel - Y12; Bahçeşehir 1. Kısım = Yusuf - Mehmet Yılmaz - Y15.
+
+
+63) EYÜPSULTAN ÖZEL ADRES / KURYE ATAMA DÜZELTMESİ - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Eyüpsultan / Eyüp bölgesinde açık adreste Bayramoğlu Sitesi ve Fatih Sultan Mehmet Bulvarı eşleşmesi bulunan teslimatlar Suat Özel - Y12 olarak atanır.
+- Eyüpsultan / Alibeyköy bölgesinde Akdeniz Caddesi eşleşmesi bulunan teslimatlar Suat Özel - Y12 olarak atanır.
+- Bu kayıtlar Abdurahim Akcan - Y13'e atanmaz.
+- Atama motoru yalnız 'Eyüp' veya 'Eyüpsultan' ilçe adına bakarak genel kurye ataması yapmaz; açık adres içindeki mahalle, cadde, site ve bulvar ifadeleri kontrol edilir.
+- Alibeyköy ana mahalle kaydı canlı 08 kaynağında zaten Suat Özel - Y12'dir; Akdeniz Caddesi / Alibeyköy eşleşmesinde bu kaynak kuralı korunur.
+- Bayramoğlu Sitesi + Fatih Sultan Mehmet Bulvarı özel adres kuralı genel Eyüpsultan / Abdurahim Akcan dağılımından önceliklidir.
+
+
+64) AHMET AKSU ÖZEL ADRES / ANAHTAR KELİME ATAMA KURALI - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Günlük listelerde Açık Adres, Semt, Not veya ilgili adres alanlarında aşağıdaki isim/ifadelerden biri açıkça görülürse teslimat Ahmet Aksu - Y3'e atanır:
+  İstanbul Teknik Üniversitesi; İTÜ; ARI; ARI 3; Teknokent Sarıyer; Skyland; Spring Giz Plaza; Avangart; Cendere Caddesi No: 56; Cendere Caddesi 9; Hamidiye Kafkas Sokak; Port Vadi; Seba Flats; Ferko Line Residences.
+- Yazım farkları, büyük/küçük harf, noktalama ve Türkçe karakter farklılıkları aynı adres adı net biçimde anlaşılıyorsa eşleşme olarak kabul edilir; farklı bir yer adı tahmin edilmez.
+- Bu özel adres/anahtar kelime kuralı genel Sarıyer, Kağıthane veya diğer normal kurye atamalarından önceliklidir.
+- Bu kayıtlar 09:00-11:00 teslimat penceresinde de Ahmet Aksu - Y3'e atanır; Ahmet Aksu'ya özel 57 numaralı 09:00-11:00 öncelik hükmü uygulanır.
+- Özellikle Cendere Caddesi eşleşmesinde numara şartı korunur: bu madde kapsamında Cendere Caddesi No:56 veya Cendere Caddesi 9 ifadeleri hedeflenir. Sadece 'Cendere Caddesi' yazması tek başına bu yeni maddeye göre otomatik eşleşme sayılmaz; mevcut diğer adres kuralları ayrıca değerlendirilir.
+
+
+65) KURYE-KURYE ZIP + GÜNLÜK RAPOR NİHAİ ÇIKTI STANDARDI - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde nihai çıktı standardı olarak onaylanmıştır.
+- Bundan sonraki tüm “kurye kurye böl”, “kurye böl” ve günlük teslim ZIP işlemlerinde 11.09.2026 tarihinde onaylanan son düzen aynen uygulanır.
+- Her kurye kendi adına ait ayrı .xlsx dosyasında hazırlanır; farklı kuryeler aynı dosyada birleştirilmez.
+- Tüm ayrı kurye Excel dosyaları tek bir ZIP içinde teslim edilir.
+- Her kurye dosyasında mobil okunabilir motor-kurye görünümü, müşteri/telefon/firma/semt/saat/açık adres/not/paket bilgileri, Y.NO, 09:00-11:00 sarı uyarısı, özel not uyarıları, ince kenarlıklar, wrap text, üst özet ve alt toplam/firma özeti korunur.
+- Her kurye dosyasının altında TOPLAM TESLİMAT, TOPLAM PAKET ve firma bazında paket özeti bulunur; firma özeti toplamı kurye TOPLAM PAKET ile birebir eşit olmalıdır.
+- ZIP içinde ayrıca “00 - GÜNLÜK RAPOR” Excel dosyası bulunur.
+- GÜNLÜK RAPOR dosyasında en az Toplam Teslimat, Toplam Paket, Aktif Kurye Sayısı, Firma Sayısı, 09:00-11:00 toplamları, Kurye Özeti ve Firma Özeti bulunur.
+- Firma Özeti zorunlu olarak her firmanın sayısını açıkça gösterir; örnek gösterim: FİTCHEF: 536 paket, RAFINERA: 189 paket, FEDBOX: 147 paket. Günlük gerçek değerler ana veriden hesaplanır; örnek sayılar sabit değildir.
+- Firma bazlı sayılarda mümkünse hem Teslimat Adedi hem Paket Adedi ayrı gösterilir; paket adedi satır sayısından değil geçerli ADET/P.Adet/Paket Adedi alanından hesaplanır.
+- Günlük rapordaki firma toplamları, kurye dosyaları toplamları ve ana veri toplamları birebir mutabık olmak zorundadır.
+- Son çıktı formatı, sütun yapısı, rapor yerleşimi veya teslim şekli günlük olarak yeniden yorumlanmaz ve keyfi biçimde değiştirilmez. Yalnız yeni bir Patron onayıyla revize edilir.
+- Eski/önceki görsel veya çıktı standartlarıyla çelişki halinde bu 65 numaralı 11.09.2026 nihai çıktı standardı önceliklidir.
+- Bu standardın amacı her gün aynı biçimde, eksiksiz, doğrudan kullanılabilir ve tekrar açıklama gerektirmeyen kurye-kurye ZIP teslimi üretmektir.
+
+
+66) KURYE DOSYASI SÜTUN ÖNCELİĞİ - SEMT EN BAŞTA - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- 65 numaralı nihai kurye-kurye ZIP standardındaki ayrı kurye Excel dosyalarında SEMT sütunu artık ana tablonun en başında yer alır.
+- Güncel kurye dosyası sütun sırası: SEMT | SAAT | MÜŞTERİ | TELEFON | FİRMA | AÇIK ADRES | NOT | PAKET | ZİL | Y.NO | KURYE.
+- Bu değişiklik yalnız kurye paylaşım dosyalarının sütun önceliğini değiştirir; veri içeriği, kurye ataması, saat kuralları, KAPALI uygulaması, firma/paket sayımları, renkler, özetler ve ZIP teslim standardı aynen korunur.
+- Önceki görsel/sütun sırası kurallarıyla çelişki halinde bu 66 numaralı daha yeni ve özel kural uygulanır.
+- Yeni bir Patron onayıyla değiştirilene kadar tüm kurye-kurye ZIP çıktılarında SEMT ilk sütun olacaktır.
+
+
+67) BEŞİKTAŞ YAPI KREDİ PLAZA ÖZEL KURYE ATAMA KURALI - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Beşiktaş ilçesinde açık adres, semt, not veya ilgili adres alanlarında “Yapı Kredi Plaza” ifadesi net olarak görülürse teslimat Abdullah Arkun - Y1'e atanır.
+- Bu özel adres kuralı Beşiktaş normal mahalle dağılımından önceliklidir.
+- Yazım farkları, büyük/küçük harf ve noktalama farklılıkları aynı plaza adı net biçimde anlaşılıyorsa eşleşme kabul edilir; farklı bir yapı/plaza adı tahmin edilmez.
+- 09:00-11:00 teslimatlarında mevcut Beşiktaş 09:00-11:00 -> Özcan Baş - Y18 kuralı korunur; bu madde normal saat özel adres atamasıdır. 09:00-11:00 için ayrıca Patron onayı verilirse ayrıca revize edilir.
+
+
+68) KURYE DOSYASI NİHAİ SÜTUN SIRASI - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Bundan sonraki tüm ayrı kurye Excel dosyalarında ana tablo sütun sırası aynen şu şekilde uygulanır:
+  SEMT | FİRMA | ADET | MÜŞTERİ | TEL | SAAT | AÇIK ADRES | NOT | Y.NO
+- Bu 68 numaralı kural, 66 numaralı önceki kurye dosyası sütun sırasını yürürlükten kaldırır ve onun yerine geçer.
+- Kurye adı ayrı kurye dosyasının üst bölümünde belirgin biçimde gösterilir; ana tabloya ayrıca KURYE sütunu eklenmez.
+- Kaynakta bulunan adet/paket bilgisi ADET sütununda korunur. Paket toplamı geçerli paket sayım standardına göre hesaplanmaya devam eder.
+- Müşteri, telefon, saat, açık adres ve not bilgileri kaybedilmez. Kaynakta Zil/Şifre gibi ek zorunlu bilgi varsa NOT alanında veya üst/ek bilgi düzeninde görünür biçimde korunur; veri kaybı yapılmaz.
+- 09:00-11:00 sarı saat uyarısı, KAPALI için Saat=KAPALI kuralı, özel not uyarıları, ince kenarlıklar, wrap text, mobil görünüm, üst özet, alt TOPLAM TESLİMAT / TOPLAM PAKET ve FİRMA ÖZETİ aynen korunur.
+- Tüm kurye dosyaları ayrı Excel olarak hazırlanır ve tek ZIP içinde teslim edilir; 00 - GÜNLÜK RAPOR standardı aynen devam eder.
+- Önceki görsel veya sütun sırası maddeleriyle çelişki halinde bu 68 numaralı en yeni sütun düzeni uygulanır.
+- Yeni bir Patron onayıyla değiştirilene kadar bu düzen BLUE CAB kurye-kurye bölme işlemlerinin son ve geçerli sütun standardıdır.
+
+
+69) KURYE DOSYASI GÖRSEL NİHAİ STANDARDI - TALHA ÇEKİCİ ÖRNEĞİ - 11.09.2026 KALICI / KATI KURAL
+- Patron Erol Güler tarafından 11.09.2026 tarihinde onaylanmıştır.
+- Bundan sonraki tüm kurye-kurye bölme işlemlerinde yalnız veri doğru olmakla yetinilmez; kurye Excel dosyaları görsel olarak da 11.09.2026 tarihinde paylaşılan Talha Çekici örnek ekranındaki düzen ve okunabilirlik standardında hazırlanır.
+- Üst bölümde kurye adı, BLUE CAB ibaresi, tarih ve teslimat/paket/09:00-11:00 özeti açık ve belirgin biçimde yer alır.
+- Ana tablo başlığı koyu ve net görünür; tablo boyunca tüm hücrelerde okunaklı, düzenli ve kesintisiz kenar çizgileri kullanılır.
+- Satır yükseklikleri, yazı boyutu, hizalama, wrap text ve sütun genişlikleri telefonda ilk bakışta okunabilecek şekilde düzenlenir; sıkışık, dağınık, kesilmiş veya gereksiz boşluklu görünüm kabul edilmez.
+- Ana tablo sütun sırası 68 numaralı nihai standarda göre aynen korunur: SEMT | FİRMA | ADET | MÜŞTERİ | TEL | SAAT | AÇIK ADRES | NOT | Y.NO.
+- Kurye adı ana tablo sütununa tekrar eklenmez; dosya üst başlığında gösterilir.
+- 09:00-11:00 uyarıları, KAPALI kayıtlar, özel notlar, firma özeti, toplam teslimat/paket, günlük rapor ve ZIP teslim standardı aynen devam eder.
+- Görsel çıktı her gün yeniden yorumlanmaz. Sütun genişlikleri, başlık yapısı, kenarlık mantığı, hizalama ve genel görünüm Talha Çekici örneğindeki düzeni referans alır.
+- Dosya teslim edilmeden önce yalnız açılabilirlik değil, görsel kalite kontrolü de zorunludur: dosya telefonda okunaklı mı, başlıklar görünür mü, hücre çizgileri net mi, metin taşması/kesilmesi var mı, sütunlar dengeli mi kontrol edilir.
+- Bu görsel kalite kontrolünden geçmeyen ZIP nihai teslim sayılmaz.
+- 65, 66 ve 68 numaralı çıktı/sütun standartlarıyla birlikte uygulanır; görsel düzen açısından çelişki halinde bu 69 numaralı daha yeni ve özel kural önceliklidir.
+- Yeni bir Patron onayıyla değiştirilene kadar bu düzen BLUE CAB kurye-kurye Excel dosyalarının kalıcı görsel standardıdır.

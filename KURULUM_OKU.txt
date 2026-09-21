@@ -1,0 +1,111 @@
+BLUE CAB PANEL v1.8 - MASTER BAĞLANTILI GÜNCELLEME
+21.09.2026
+
+ÖNEMLİ
+Bu ZIP bir günlük kurye listesi DEĞİLDİR. Mevcut panelin Excel yükleme
+kutusuna atılmaz. Panel uygulamasının kaynak dosyalarını güncellemek içindir.
+Bu paket hazırlanırken canlı sunucuya veya Drive kaynağına yazılmadı.
+
+1. İLK KURULUM / MEVCUT PANELİ GÜNCELLEME
+- Mevcut uygulama klasörünün yedeğini alın.
+- ZIP'i açın. BLUE_CAB_PANEL_v1_8_GITHUB_READY klasörünün içindeki dosyaları,
+  canlı panelin kullandığı uygulama deposunun köküne aktarın.
+- app.py, bluecab_engine.py ve list_duzenle.py değişir.
+  outputs.py, master_store.py, data/ ve templates/ birlikte bulunmalıdır.
+  Yalnız index.html dosyasını değiştirmek yeterli değildir.
+- Python 3.11 veya daha yeni desteklenen bir Python kullanın.
+- Render kullanılıyorsa uygulama deposuna değişiklikleri kaydedin ve
+  yeni sürümü yayına alın. Ayarlar:
+    Build Command: pip install -r requirements.txt
+    Start Command: gunicorn app:app --workers 1 --threads 4 --timeout 180
+- Mevcut GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET ve GOOGLE_REDIRECT_URI
+  sunucu ayarlarını koruyun. Gerçek anahtarlar bu ZIP'e dahil değildir.
+
+2. SUNUCU AYARLARI
+FLASK_SECRET_KEY: Uzun, rastgele ve sabit bir oturum anahtarı.
+BLUECAB_ADMIN_KEY: En az 16 karakterlik ayrı yönetici anahtarı.
+  Tanımsızsa ortak MASTER değişiklikleri kilitlidir; günlük liste
+  işlemleri paketteki MASTER kopyasıyla yapılabilir.
+  Her anahtar için ayrı rastgele değer üretin. Örnek komut:
+    python -c "import secrets; print(secrets.token_urlsafe(32))"
+BLUECAB_DATA_DIR: Yüklenen MASTER ve eski sürümlerinin kalıcı dizini.
+  Örnek: /var/data/bluecab_master
+  Bu ayar ancak /var/data gerçekten kalıcı bir diske bağlandıysa kalıcılık
+  sağlar. Ortam değişkenini yazmak tek başına disk oluşturmaz.
+  Kalıcı disk yoksa yeniden yayınlama/yeniden başlamada son yüklenen
+  MASTER kaybolabilir; paketle gelen Drive kopyası kullanılır ve ekranda belirtilir.
+- Tek sunucu işlemi kullanın: --workers 1. Google oturumları bellektedir;
+  sunucu yeniden başlayınca Google hesabını yeniden bağlamak gerekir.
+- HTTPS ve kuruma uygun erişim kısıtlaması kullanın. Bu paket tam bir
+  kullanıcı/rol yönetimi değildir; MASTER değişikliği anahtarla korunur.
+
+3. PANELDE MASTER YÜKLEME
+- Panel açılınca v1.8 ve Etkin MASTER bölümünü görün.
+- 'MASTER yönetimi' alanını açın.
+- Drive'daki tam ana tabloyu Excel (.xlsx) olarak indirin.
+- 'Excel MASTER yükle' bölümünde dosyayı seçin ve yönetici
+  anahtarıyla etkinleştirin. Günlük müşteri listesini burada kullanmayın.
+- Eksik mahalleler, çelişkili ilçe-mahalle satırları, geçersiz Y.NO ve
+  boş AKTİF kurye bilgileri yeni MASTER'ın etkinleşmesini engeller.
+- Eski sürüm korunur. Panelde yeni sürüm ve yükleme zamanı görünür.
+- Günlük işlem başlamadan MASTER değişmişse sayfa yenilemesi istenir;
+  bir işlem içinde farklı MASTER sürümleri karıştırılmaz.
+
+4. DRIVE'DAN DOĞRUDAN YENİLEME (İSTEĞE BAĞLI)
+- Google Cloud projesinde Google Sheets API açık olmalıdır.
+- Mevcut Google OAuth yapılandırmasına 'spreadsheets.readonly' izni gerekir.
+- Panelde 'DRIVE MASTER OKUMA İZNİNİ BAĞLA' ile ilgili hesaba bağlanın.
+- Bağlantıdan sonra 'DRIVE MASTER'DAN YENİLE' düğmesine basın.
+- Yalnızca okur; Drive tablosunu değiştirmez. Bağlanan hesap kaynağı
+  okuyabilmelidir. Bağlantı/okuma/doğrulama hatasında etkin tablo değişmez.
+- ARKA PLANDA OTOMATİK EŞİTLEME YOKTUR. Tablo değişikliğinden sonra
+  bu düğme kullanılmalı veya tam Excel MASTER tekrar yüklenmelidir.
+- Normal ilçe-mahalle atamaları MASTER'dan; saat/AVM/özel adres kuralları ve
+  onaylı açık-adres -> mahalle ipuçları data/special_rules.json dosyasından gelir. Drive'daki kural metni otomatik
+  yorumlanmaz. Özel kural değişikliği ayrıca bu kurallara uygulanmalıdır.
+
+5. GÜNLÜK KULLANIM
+- Günlük firma Excel'lerini normal liste alanından seçin.
+- 'LİSTE DÜZENLE + KURYE ATA' veya 'KURYEYE BÖL VE ZIP İNDİR' kullanın.
+  İkisi aynı atama motorunu ve aynı MASTER'ı kullanır.
+- Eşleşmeyen/çelişen adresler KONTROL GEREKİYOR olarak ayrılır.
+  Kaynaktaki eski kurye adına veya başka ilçeye zorla atama yapılmaz.
+- KAPALI kayıtta sadece MASTER'ın açıkça tanımladığı normal kurye
+  korunur ve saat KAPALI kalır. Tanımsız kurye/Y.NO uydurulmaz.
+- Kurye dosyaları firma firma sıralıdır; üst kurye/Y.NO başlığı,
+  altta firma paket özeti ve toplamlar vardır. Y.NO hücreleri sayıdır.
+- Mükerrer firma/müşteri satırları otomatik silinmez. Revize bir dosyayı
+  eski dosyasıyla birlikte işlemek toplamları yineleyebilir; liste revizyonunu
+  operatör seçer. Bu paket firmalar arası revizyon onay sistemi değildir.
+- Bu çıktı LİSTE/ATAMA raporudur; fiilen dağıtılan paket raporu değildir.
+
+6. YAYINA ALDIKTAN SONRA KABUL KONTROLÜ
+- /health adresinde panel 1.8 ve beklenen MASTER sürümü görünmeli.
+- Testleri çalıştırın: python -m unittest discover -s tests -v
+- Balmumcu normal: Abdullah Arkun / 1.
+- Kanyon AVM normal: Murat Turan / 2.
+- Kadıköy-Göztepe normal: Salih Berberoğlu / 25.
+- Sarıyer-Maslak 09:00-11:00: Ahmet Aksu / 3.
+- Adalar: KAPALI; rastgele kurye yok.
+- Sadece Göztepe yazan, ilçesi belirsiz kayıt: KONTROL GEREKİYOR.
+- Aynı deneme dosyasını iki işleme de verin; kurye ve paket adetleri tutmalı.
+- Test hesabıyla Google bağlantısı, Gmail eki işleme, MASTER yenileme ve
+  sunucu yeniden başladıktan sonra MASTER kalıcılığını ayrıca doğrulayın.
+- Yeni sonucu gerçek listeyle kontrol etmeden eski paneli tamamen kaldırmayın.
+
+TEST SINIRI
+Atama motoru, kaynak Excel okuma, iki çıktı yolu, MASTER sürüm/değişim
+kontrolleri ve Excel formül önbellekleri yerel testlerden geçirildi.
+21.09.2026 tarihli FIT_CHEF örneğinde önceki 46 ATANMADI kaydın 46/46'sı
+açık-adres -> mahalle çözümlemesiyle atandı. Diğer belirsiz kayıtlar güvenli
+şekilde KONTROL GEREKİYOR olarak bırakılır.
+Bu çalışma ortamında Flask/Google istemci bağımlılıkları kurulamadığı
+ için HTTP sunucusu ve gerçek Google OAuth/Gmail/Sheets bağlantısı
+çalıştırılarak test edilmedi. Şablonlar Jinja ile derlendi ve farklı
+bağlantı/yönetici durumlarında üretildi; tarayıcı görsel testi yapılmadı.
+Ayrıntılar: TEST_RAPORU.json.
+
+RESMİ KURULUM KAYNAKLARI
+https://render.com/docs/deploy-flask
+https://render.com/docs/disks
+https://developers.google.com/workspace/sheets/api/scopes

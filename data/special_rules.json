@@ -1,0 +1,607 @@
+{
+  "version": "2026-09-21-v1.8",
+  "source_rules_date": "2026-09-21",
+  "couriers": {
+    "1": "Abdullah Arkun",
+    "2": "Murat Turan",
+    "3": "Ahmet Aksu",
+    "4": "Sedat Açar",
+    "5": "Sefer Akdağ",
+    "6": "Mehmet Koruk",
+    "7": "Erkan Ceylan",
+    "8": "Ahmet Kasım",
+    "9": "Murat Açar",
+    "10": "Hasan Uğur Bakırcıoğlu",
+    "11": "Serkan Musaoğlu",
+    "12": "Suat Özel",
+    "13": "Abdurahim Akcan",
+    "14": "Abdurrahman Gün",
+    "15": "Yusuf - Mehmet Yılmaz",
+    "16": "Ramazan Yılmaz",
+    "17": "Kemal Çakırca",
+    "18": "Özcan Baş",
+    "19": "Mutlu Girgin",
+    "20": "Serhat Karataş",
+    "21": "Fatih Aydın",
+    "22": "Murat Karakuş",
+    "23": "Okan Muslu",
+    "24": "Adem Aşçı",
+    "25": "Salih Berberoğlu",
+    "26": "Mesut Dursun",
+    "27": "Talha Çekici",
+    "28": "Orhan Karasu",
+    "29": "Hamza Talha Erol",
+    "30": "Recep Akdağ"
+  },
+  "time_9_11": {
+    "sariyer": 18,
+    "besiktas": 18,
+    "sisli": 18,
+    "kadikoy": 30,
+    "atasehir": 29,
+    "umraniye": 28,
+    "uskudar": 23,
+    "maltepe": 27,
+    "bakirkoy": 12,
+    "zeytinburnu": 12,
+    "fatih": 12,
+    "gungoren": 12
+  },
+  "priority_regions": [
+    {
+      "district": "sariyer",
+      "neighborhoods": [
+        "ayazaga",
+        "huzur",
+        "maslak"
+      ],
+      "yno": 3
+    }
+  ],
+  "address_rules": [
+    {
+      "id": "AA-ADRES",
+      "districts": [
+        "sariyer",
+        "kagithane"
+      ],
+      "any": [
+        "istanbul teknik universitesi",
+        "itu",
+        "ari 3",
+        "teknokent",
+        "skyland",
+        "spring giz plaza",
+        "avangart",
+        "port vadi",
+        "seba flats",
+        "ferko line residences",
+        "camlivadi",
+        "camli vadi"
+      ],
+      "all": [],
+      "yno": 3,
+      "priority": 10
+    },
+    {
+      "id": "AA-VADI",
+      "districts": [
+        "sariyer"
+      ],
+      "any": [
+        "vadi istanbul",
+        "vadi ist",
+        "azerbaycan caddesi"
+      ],
+      "all": [],
+      "yno": 3,
+      "priority": 10
+    },
+    {
+      "id": "AA-HAMIDIYE-KAFKAS",
+      "districts": [
+        "kagithane"
+      ],
+      "any": [],
+      "all": [
+        "hamidiye",
+        "kafkas sokak"
+      ],
+      "yno": 3,
+      "priority": 10
+    },
+    {
+      "id": "BESIKTAS-KANYON",
+      "districts": [
+        "besiktas",
+        "sisli"
+      ],
+      "any": [
+        "kanyon",
+        "kanyon avm"
+      ],
+      "all": [],
+      "yno": 2,
+      "priority": 30
+    },
+    {
+      "id": "BESIKTAS-YAPI-KREDI",
+      "districts": [
+        "besiktas"
+      ],
+      "any": [
+        "yapi kredi plaza",
+        "yapi kredi plazalari"
+      ],
+      "all": [],
+      "yno": 1,
+      "priority": 30
+    },
+    {
+      "id": "BESIKTAS-VALIDECESME",
+      "districts": [
+        "besiktas"
+      ],
+      "any": [
+        "aktarlar sokak",
+        "validecesme"
+      ],
+      "all": [],
+      "yno": 2,
+      "priority": 30
+    },
+    {
+      "id": "SARIYER-BORSA",
+      "districts": [
+        "sariyer"
+      ],
+      "any": [
+        "borsa istanbul"
+      ],
+      "all": [],
+      "yno": 7,
+      "priority": 30
+    },
+    {
+      "id": "SARIYER-YENI-LEVENT",
+      "districts": [
+        "sariyer",
+        "kagithane"
+      ],
+      "any": [
+        "yeni levent sitesi",
+        "ibrahim karaoglan caddesi"
+      ],
+      "all": [],
+      "yno": 6,
+      "priority": 30
+    },
+    {
+      "id": "BASAKSEHIR-MALL",
+      "districts": [
+        "basaksehir"
+      ],
+      "any": [
+        "mall of istanbul"
+      ],
+      "all": [],
+      "yno": 12,
+      "priority": 30
+    },
+    {
+      "id": "EYUP-DOGA-COUNTRY",
+      "districts": [
+        "eyupsultan"
+      ],
+      "any": [
+        "doga country",
+        "kilincigol"
+      ],
+      "all": [],
+      "yno": 13,
+      "priority": 30
+    },
+    {
+      "id": "EYUP-KEMERKOY",
+      "districts": [
+        "eyupsultan"
+      ],
+      "any": [
+        "kemerkoy veteriner",
+        "selanik bulvari"
+      ],
+      "all": [],
+      "yno": 13,
+      "priority": 30
+    },
+    {
+      "id": "EYUP-KEMERBURGAZ",
+      "districts": [
+        "eyupsultan"
+      ],
+      "any": [
+        "kemerburgaz",
+        "gokturk",
+        "5 levent"
+      ],
+      "all": [],
+      "yno": 13,
+      "priority": 30
+    },
+    {
+      "id": "EYUP-BAYRAMOGLU",
+      "districts": [
+        "eyupsultan"
+      ],
+      "any": [],
+      "all": [
+        "bayramoglu sitesi",
+        "fatih sultan mehmet bulvari"
+      ],
+      "yno": 12,
+      "priority": 25
+    },
+    {
+      "id": "EYUP-AKDENIZ",
+      "districts": [
+        "eyupsultan"
+      ],
+      "any": [],
+      "all": [
+        "alibeykoy",
+        "akdeniz caddesi"
+      ],
+      "yno": 12,
+      "priority": 25
+    }
+  ],
+  "address_neighborhood_hints": [
+    {
+      "id": "AVCILAR-SENLIK-GUNES",
+      "district": "avcilar",
+      "neighborhood": "CİHANGİR",
+      "all": [
+        "senlik sokak",
+        "gunes apt"
+      ]
+    },
+    {
+      "id": "BAKIRKOY-AHL-KARGO",
+      "district": "bakirkoy",
+      "neighborhood": "YEŞİLKÖY",
+      "all": [
+        "ahl kargo",
+        "havalimani caddesi"
+      ]
+    },
+    {
+      "id": "BAKIRKOY-RAHMI-APAK",
+      "district": "bakirkoy",
+      "neighborhood": "OSMANİYE",
+      "all": [
+        "rahmi apak sokak"
+      ]
+    },
+    {
+      "id": "BAKIRKOY-NOVUS",
+      "district": "bakirkoy",
+      "neighborhood": "ATAKÖY 2-5-6. KISIM",
+      "all": [
+        "beyaz lale sokak",
+        "novus residence"
+      ]
+    },
+    {
+      "id": "BESIKTAS-AYTAR",
+      "district": "besiktas",
+      "neighborhood": "NİSBETİYE",
+      "any": [
+        "aytar caddesi",
+        "aytar cad"
+      ]
+    },
+    {
+      "id": "BESIKTAS-YAPI-KREDI-LEVENT",
+      "district": "besiktas",
+      "neighborhood": "LEVENT",
+      "any": [
+        "yapi kredi plaza",
+        "yaikredi plaza"
+      ]
+    },
+    {
+      "id": "BESIKTAS-ZORLU",
+      "district": "besiktas",
+      "neighborhood": "LEVAZIM",
+      "all": [
+        "zorlu center residence"
+      ]
+    },
+    {
+      "id": "BESIKTAS-PARK-MAYA",
+      "district": "besiktas",
+      "neighborhood": "AKAT",
+      "all": [
+        "park maya"
+      ]
+    },
+    {
+      "id": "BESIKTAS-VEFA-BAYIRI",
+      "district": "besiktas",
+      "neighborhood": "GAYRETTEPE",
+      "all": [
+        "vefa bayiri"
+      ]
+    },
+    {
+      "id": "BESIKTAS-POLAT-1",
+      "district": "besiktas",
+      "neighborhood": "GAYRETTEPE",
+      "all": [
+        "gokturk sokak",
+        "polat 1"
+      ]
+    },
+    {
+      "id": "EYUP-ARKETIP2",
+      "district": "eyupsultan",
+      "neighborhood": "GÖKTÜRK MERKEZ",
+      "all": [
+        "arketip 2",
+        "feslegen sokak"
+      ]
+    },
+    {
+      "id": "EYUP-KEMERLIFE21",
+      "district": "eyupsultan",
+      "neighborhood": "GÖKTÜRK MERKEZ",
+      "all": [
+        "kemerlife 21"
+      ]
+    },
+    {
+      "id": "EYUP-NATURALIST-VERDE",
+      "district": "eyupsultan",
+      "neighborhood": "MİTHATPAŞA",
+      "all": [
+        "naturalist verde"
+      ]
+    },
+    {
+      "id": "EYUP-TURKMENISTAN",
+      "district": "eyupsultan",
+      "neighborhood": "MİMAR SİNAN",
+      "all": [
+        "turkmenistan konsoloslugu"
+      ]
+    },
+    {
+      "id": "KADIKOY-FKG-ARCELIK",
+      "district": "kadikoy",
+      "neighborhood": "GÖZTEPE",
+      "all": [
+        "fahrettin kerim gokay",
+        "arcelik"
+      ]
+    },
+    {
+      "id": "KADIKOY-KUYUBASI-FENIK",
+      "district": "kadikoy",
+      "neighborhood": "FENERYOLU",
+      "all": [
+        "kuyubasi sokak",
+        "fenik"
+      ]
+    },
+    {
+      "id": "KADIKOY-LAVANTA-GELINCIK",
+      "district": "kadikoy",
+      "neighborhood": "HASANPAŞA",
+      "all": [
+        "lavanta sokak",
+        "gelincik apt"
+      ]
+    },
+    {
+      "id": "KADIKOY-EGEMEN-GUR",
+      "district": "kadikoy",
+      "neighborhood": "FENERBAHÇE",
+      "all": [
+        "egemen sokak",
+        "gur apartmani"
+      ]
+    },
+    {
+      "id": "KADIKOY-ORTAYOL-EVIM",
+      "district": "kadikoy",
+      "neighborhood": "BOSTANCI",
+      "all": [
+        "ortayol sokak",
+        "evim apt"
+      ]
+    },
+    {
+      "id": "KADIKOY-FENERKALAMIS-EGEMEN",
+      "district": "kadikoy",
+      "neighborhood": "FENERBAHÇE",
+      "all": [
+        "fenerkalamis caddesi",
+        "egemen sokak"
+      ]
+    },
+    {
+      "id": "KADIKOY-SAKACI-MAXIMUS",
+      "district": "kadikoy",
+      "neighborhood": "19 MAYIS",
+      "all": [
+        "sakaci sokak",
+        "maximus"
+      ]
+    },
+    {
+      "id": "KADIKOY-ABDIBEY-ULU",
+      "district": "kadikoy",
+      "neighborhood": "EĞİTİM",
+      "all": [
+        "abdibey sokak",
+        "ulu apt"
+      ]
+    },
+    {
+      "id": "KADIKOY-TUCCARBASI-BALCAY",
+      "district": "kadikoy",
+      "neighborhood": "SAHRAYICEDİT",
+      "all": [
+        "tuccarbasi sokak",
+        "balcay apt"
+      ]
+    },
+    {
+      "id": "KADIKOY-ABDIBEY-KENTPLUS",
+      "district": "kadikoy",
+      "neighborhood": "EĞİTİM",
+      "all": [
+        "abdibey sokak",
+        "kentplus"
+      ]
+    },
+    {
+      "id": "KADIKOY-MEHMET-ERTEM-ALP",
+      "district": "kadikoy",
+      "neighborhood": "ERENKÖY",
+      "all": [
+        "mehmet ertem alp",
+        "melis apt"
+      ]
+    },
+    {
+      "id": "KADIKOY-PAPATYALI",
+      "district": "kadikoy",
+      "neighborhood": "CADDEBOSTAN",
+      "all": [
+        "papatyali sokak"
+      ]
+    },
+    {
+      "id": "KADIKOY-GUNESLI-PARK",
+      "district": "kadikoy",
+      "neighborhood": "19 MAYIS",
+      "all": [
+        "gunesli sokak",
+        "park apt"
+      ]
+    },
+    {
+      "id": "KADIKOY-FENERLI-AHMET",
+      "district": "kadikoy",
+      "neighborhood": "FENERYOLU",
+      "all": [
+        "fenerli ahmet",
+        "deniz apt"
+      ]
+    },
+    {
+      "id": "KADIKOY-AYCIL-OZGUR",
+      "district": "kadikoy",
+      "neighborhood": "KOZYATAĞI",
+      "all": [
+        "aycil sokak",
+        "ozgur palat"
+      ]
+    },
+    {
+      "id": "KAGITHANE-HAVADAR",
+      "district": "kagithane",
+      "neighborhood": "MERKEZ",
+      "all": [
+        "havadar sokak"
+      ]
+    },
+    {
+      "id": "KAGITHANE-GUZELDERE-TOKI",
+      "district": "kagithane",
+      "neighborhood": "YAHYA KEMAL",
+      "all": [
+        "guzeldere caddesi",
+        "toki"
+      ]
+    },
+    {
+      "id": "KAGITHANE-DIRAYET",
+      "district": "kagithane",
+      "neighborhood": "YEŞİLCE",
+      "all": [
+        "dirayet sokak"
+      ]
+    },
+    {
+      "id": "KAGITHANE-CEKIMSER",
+      "district": "kagithane",
+      "neighborhood": "SEYRANTEPE",
+      "all": [
+        "cekimser sokak"
+      ]
+    },
+    {
+      "id": "SARIYER-125-YESILCAM",
+      "district": "sariyer",
+      "neighborhood": "AYAZAĞA",
+      "all": [
+        "125 sokak",
+        "yesilcam"
+      ]
+    },
+    {
+      "id": "SARIYER-DEMIR-EFE-PANORAMA",
+      "district": "sariyer",
+      "neighborhood": "ZEKERİYAKÖY",
+      "all": [
+        "demirefe sokak",
+        "panaroma life"
+      ]
+    },
+    {
+      "id": "SARIYER-KONMAZ-KENT-OPTIMUM",
+      "district": "sariyer",
+      "neighborhood": "USKUMRUKÖY",
+      "all": [
+        "konmaz sokak",
+        "kent optimum"
+      ]
+    },
+    {
+      "id": "SARIYER-CELEBI-BUYUK",
+      "district": "sariyer",
+      "neighborhood": "YENİKÖY",
+      "all": [
+        "celebi yokusu",
+        "buyuk apartmani"
+      ]
+    },
+    {
+      "id": "SARIYER-MAHMUT-CIKMAZI",
+      "district": "sariyer",
+      "neighborhood": "YENİKÖY",
+      "all": [
+        "mahmut cikmazi"
+      ]
+    },
+    {
+      "id": "SARIYER-KANLIKAVAK",
+      "district": "sariyer",
+      "neighborhood": "EMİRGAN",
+      "all": [
+        "kanlikavak deresi"
+      ]
+    },
+    {
+      "id": "SARIYER-LARA-TURES",
+      "district": "sariyer",
+      "neighborhood": "POLİGON",
+      "all": [
+        "lara sokak",
+        "tures sitesi"
+      ]
+    }
+  ]
+}

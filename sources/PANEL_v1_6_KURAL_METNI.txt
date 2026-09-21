@@ -1,0 +1,55 @@
+BLUE CAB PANEL v1.5 - MASTER KURALLARI
+Tarih: 14.09.2026
+
+ATAMA ONCELIGI
+1) Gercek ilce/mahalle/lokasyon tespiti
+2) 09:00-11:00 UST KURAL
+3) Ozel lokasyon/adres kurali
+4) Mahalle/ilce MASTER
+5) KAPALI / ATANMADI kontrolu
+
+09:00-11:00 UST KURAL
+- Besiktas, Sisli, Sariyer -> Ozcan Bas (18)
+- Kadikoy -> Recep Akdag (30)
+- Atasehir -> Hamza Talha Erol (29)
+- Umraniye -> Orhan Karasu (28)
+- Uskudar -> Okan Muslu (23)
+- Maltepe -> Talha Cekici (27)
+- Bakirkoy, Fatih, Zeytinburnu, Gungoren/Merter -> Suat Ozel (12)
+
+AKTIF OZEL LOKASYONLAR
+- Balmumcu -> Abdullah Arkun (1)
+- Besiktas Kanyon AVM -> Murat Turan (2)
+- Sariyer Borsa Istanbul -> Erkan Ceylan (7)
+- Sariyer Yeni Levent Sitesi / Ibrahim Karaoglan Caddesi -> Mehmet Koruk (6)
+- Kagithane Ilke Sokak -> Hurriyet -> Murat Turan (2)
+- Yapi Kredi Plaza -> Abdullah Arkun (1), normal saatte
+- Ahmet Aksu onayli ozel bolge/adresleri normal saatte uygulanir; 09:00-11:00 ust kuralini ezmez.
+
+LISTE DUZENI
+- Her kurye ayri Excel dosyasi.
+- Dosya ust basliginda Y.NO sayisal + kurye adi gorunur (ornek: Y.NO 1 - Abdullah Arkun).
+- Excel Y.NO hucrelerinde yalnizca sayi kullanilir: 1, 2, 3, 4...; Y1/Y2 yazilmaz.
+- Dosya adlarinda mevcut uyumluluk korunur: Kurye Adi - Y1.xlsx vb.
+- Satirlar firma firma siralanir.
+- Alt kisimda FIRMA OZETI ve firma bazli paket toplamlari bulunur.
+- Ustte TOPLAM TESLIMAT / TOPLAM PAKET / 09:00-11:00 ozeti bulunur.
+- Mobil kullanim icin yazi puntolari kucuk, sade ve okunakli tutulur.
+- Acik adres ve Not hucreleri sarar; 09:00-11:00 saat hucreleri vurgulanir.
+
+LISTE DUZENLE BUTONU
+- Ilce, Mahalle, Semt, Saat, Adres, Not alanlarini standartlastirir.
+- Aynı MASTER motoruyla Kurye ve Y.NO atar.
+- FED BOX gibi ayri Ilce + Mahalle sutunlu listeleri dogrudan okur.
+- Y.NO sayisal yazilir.
+
+KURYEYE BOL BUTONU
+- Ayni MASTER motorunu kullanir.
+- Kurye dosyalari + Gunluk Rapor + Islem Ozeti + ZIP uretir.
+- Emin olunmayan kaydi tahminle yanlis kuryeye atmak yerine ATANMADI birakir.
+
+KAPALI ILCELER
+- Adalar, Arnavutkoy, Catalca, Silivri, Sile.
+
+NOT
+Bu dosya v1.5 paketinin kalici referans notudur.

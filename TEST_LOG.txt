@@ -1,0 +1,19 @@
+test_01_all_master_normal_rows (test_engine.EngineTests.test_01_all_master_normal_rows) ... ok
+test_02_all_master_time_window_rows (test_engine.EngineTests.test_02_all_master_time_window_rows) ... ok
+test_03_every_master_neighborhood_suffix (test_engine.EngineTests.test_03_every_master_neighborhood_suffix) ... ok
+test_04_key_regressions (test_engine.EngineTests.test_04_key_regressions) ... ok
+test_05_priority_and_scopes (test_engine.EngineTests.test_05_priority_and_scopes) ... ok
+test_06_time_formats_and_false_matches (test_engine.EngineTests.test_06_time_formats_and_false_matches) ... ok
+test_07_location_hierarchy (test_engine.EngineTests.test_07_location_hierarchy) ... ok
+test_08_invalid_quantity (test_engine.EngineTests.test_08_invalid_quantity) ... ok
+test_09_master_really_drives_assignment (test_engine.EngineTests.test_09_master_really_drives_assignment) ... ok
+test_10_validation_and_atomic_store (test_engine.EngineTests.test_10_validation_and_atomic_store) ... ok
+test_11_duplicate_master_rejected (test_engine.EngineTests.test_11_duplicate_master_rejected) ... ok
+test_12_source_and_outputs_agree (test_engine.EngineTests.test_12_source_and_outputs_agree) ... ok
+test_13_large_groups_and_company_case (test_engine.EngineTests.test_13_large_groups_and_company_case) ... ok
+test_14_address_neighborhood_hints (test_engine.EngineTests.test_14_address_neighborhood_hints) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 12.593s
+
+OK

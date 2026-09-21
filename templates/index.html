@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BLUE CAB | MASTER Panel v1.8</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#18324d;line-height:1.5}.top{background:#17365d;color:white;padding:22px 0}.wrap{max-width:1000px;margin:24px auto;padding:0 18px}.top .wrap{margin:0 auto}.top h1{margin:0;font-size:26px}.muted{color:#5d7185;font-size:14px}.card{background:white;border-radius:14px;padding:24px;box-shadow:0 5px 20px #17365d12;margin-bottom:18px}h2{font-size:20px;margin:0 0 12px}h3{font-size:16px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:#f1f6fb;border-radius:10px;padding:12px}.stat strong{display:block;font-size:25px}.stat span{font-size:12px}.badge{background:#d9eaf7;border-radius:18px;padding:4px 10px;font-size:12px;display:inline-block}.box{border:2px dashed #9bb5cf;border-radius:10px;padding:18px;background:#f8fbff;margin:14px 0}.note{padding:12px;border-left:4px solid #49779f;background:#edf4fb;font-size:14px;margin:14px 0}.warn{border-left-color:#d89730;background:#fff4df}.flash{padding:12px;background:#fff1d6;border-radius:8px;margin-bottom:12px;overflow-wrap:anywhere}.error{background:#fde8e8;border-left:4px solid #b83a3a;padding:14px}.btn{display:inline-block;width:100%;padding:13px;border:0;border-radius:9px;background:#17365d;color:white;font-size:15px;font-weight:650;text-align:center;cursor:pointer;text-decoration:none}.btn.alt{background:#2e6a4f}.btn.organize{background:#6b4f9b}.btn.secondary{background:#e4edf6;color:#17365d}.btn:disabled{opacity:.45;cursor:not-allowed}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}label{display:block;font-size:14px;font-weight:600}input[type=password],input[type=date]{padding:10px;border:1px solid #bdcbd8;border-radius:7px;font-size:15px;max-width:100%;width:100%;margin:6px 0 12px}input[type=file]{max-width:100%;font-size:14px}details{border-top:1px solid #dce4ed;margin-top:18px;padding-top:14px}summary{cursor:pointer;font-weight:650}code{font-size:12px;overflow-wrap:anywhere}.foot{font-size:12px;color:#5d7185;padding:8px 0 20px}form{margin:0}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #dce4ed;text-align:left;overflow-wrap:anywhere}@media(max-width:650px){.grid,.actions{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.card{padding:18px}.top h1{font-size:23px}}
+</style></head><body>
+<header class="top"><div class="wrap"><h1>BLUE CAB • Operasyon Paneli</h1><div>İlçe + mahalle MASTER · Özel kurallar · Kuryeye böl</div><small>{{version}}</small></div></header>
+<main class="wrap">
+{% with messages=get_flashed_messages() %}{% for m in messages %}<div class="flash" role="status">{{m}}</div>{% endfor %}{% endwith %}
+<section class="card"><h2>Etkin MASTER <span class="badge">{{master.get('mode','DOĞRULANAMADI')}}</span></h2>
+{% if master_error %}<div class="error">{{master_error}}</div>{% else %}
+<div class="stats"><div class="stat"><strong>{{master.districts}}</strong><span>İLÇE</span></div><div class="stat"><strong>{{master.rows}}</strong><span>MAHALLE KAYDI</span></div><div class="stat"><strong>{{master.active}}</strong><span>AKTİF MAHALLE</span></div><div class="stat"><strong>{{master.closed}}</strong><span>KAPALI MAHALLE</span></div></div>
+<p class="muted">MASTER sürümü: <code>{{master.version}}</code> · Yükleme/alınma: {{master.get('snapshot_at','')}}<br>Özel kurallar: <code>{{master.rules_version}}</code></p>
+<div class="note">Normal atama, bu dosyadaki <b>İLÇE + MAHALLE</b> eşleşmesinden yapılır. Özel adres ve saat kuralları ayrı korunur. Eşleşmeyen kayıt rastgele kuryeye verilmez.</div>
+{% endif %}
+<details><summary>MASTER yönetimi — Excel yükle veya Drive’dan yenile</summary>
+<p class="muted">Bu alan günlük müşteri listesi için değildir. Tam ilçe–mahalle–kurye ana tablosu içindir. Değişiklik bu sunucudaki tüm ekip oturumlarına uygulanır.</p>
+{% if not admin_enabled %}<div class="note warn">MASTER değişikliği kilitli. Sunucuda <code>BLUECAB_ADMIN_KEY</code> ayarlanmalı. Paketteki MASTER ile günlük işlemler kullanılabilir.</div>{% endif %}
+{% if not persistent_configured %}<div class="note warn">Kalıcı veri dizini ayarlı değil. Sunucu yeniden başladığında yüklenen MASTER kaybolabilir. Kalıcı disk ve <code>BLUECAB_DATA_DIR</code> ayarı kurulum belgesinde açıklanmıştır.</div>{% endif %}
+<div class="grid"><form action="/master/upload" method="post" enctype="multipart/form-data">
+<input type="hidden" name="csrf_token" value="{{csrf_token()}}"><input type="hidden" name="master_version" value="{{master.get('version','')}}">
+<h3>Excel MASTER yükle</h3><label>Yönetici anahtarı<input type="password" name="admin_key" autocomplete="off" required></label>
+<div class="box"><input aria-label="MASTER Excel dosyası" type="file" name="master_file" accept=".xlsx" required></div>
+<button class="btn" {% if not admin_enabled or master_error %}disabled{% endif %}>MASTER’I KONTROL ET VE ETKİNLEŞTİR</button>
+</form><div><h3>Drive MASTER’dan yenile</h3><p class="muted">Yalnızca okur; Drive tablosunu değiştirmez. İlk kullanımda Google Sheets okuma izni gerekir. Otomatik arka plan eşitlemesi yapılmaz.</p>
+<form action="{% if sheets_connected %}/master/refresh{% else %}/master/connect{% endif %}" method="post">
+<input type="hidden" name="csrf_token" value="{{csrf_token()}}"><input type="hidden" name="master_version" value="{{master.get('version','')}}">
+<label>Yönetici anahtarı<input type="password" name="admin_key" autocomplete="off" required></label>
+<button class="btn alt" {% if not admin_enabled or master_error %}disabled{% endif %}>{% if sheets_connected %}DRIVE MASTER’DAN YENİLE{% else %}DRIVE MASTER OKUMA İZNİNİ BAĞLA{% endif %}</button></form>
+<p class="muted">Eksik veya çelişkili dosya etkinleştirilmez. Önceki MASTER sürümleri sunucudaki arşivde korunur.</p></div></div></details></section>
+<section class="card"><h2>Günlük firma listelerini işle</h2><p class="muted">Her iki işlem aynı MASTER ve aynı atama motorunu kullanır.</p>
+<form action="/process" method="post" enctype="multipart/form-data">
+<input type="hidden" name="csrf_token" value="{{csrf_token()}}"><input type="hidden" name="master_version" value="{{master.get('version','')}}">
+<div class="box"><label>Günlük Excel listeleri</label><p><input type="file" name="files" accept=".xlsx,.xlsm" multiple required></p><small>Birden fazla firma dosyasını birlikte seçebilirsiniz. Mükerrer firma/müşteri satırları otomatik silinmez.</small></div>
+<label>Teslimat tarihi<input type="date" name="date"></label>
+<div class="actions"><button class="btn organize" type="submit" formaction="/organize" {% if master_error %}disabled{% endif %}>LİSTE DÜZENLE + KURYE ATA</button><button class="btn" type="submit" formaction="/process" {% if master_error %}disabled{% endif %}>KURYEYE BÖL VE ZIP İNDİR</button></div></form>
+<div class="note"><b>Kontrol:</b> Atama nedeni, MASTER satırı ve sürümü raporda yer alır. KONTROL GEREKİYOR satırları incelenmeden liste paylaşıma hazır sayılmaz. KAPALI satırda yalnızca MASTER’ın açıkça tanımladığı kurye korunur; başka kurye uydurulmaz.</div></section>
+<section class="card"><h2>Gmail’den listeleri çek</h2><p class="muted">Bağladığınız hesaptaki Excel ekli e-postaları gösterir. Yalnızca seçtiğiniz e-postayı işler; e-posta göndermez, silmez veya değiştirmez.</p>
+{% if gmail_connected %}<a class="btn alt" href="/gmail/messages">GMAIL’DEKİ SON LİSTELERİ GÖSTER</a><form action="/gmail/disconnect" method="post" style="margin-top:12px"><input type="hidden" name="csrf_token" value="{{csrf_token()}}"><button class="btn secondary">GOOGLE BAĞLANTISINI KAPAT</button></form>{% else %}<a class="btn alt" href="/gmail/connect">GMAIL HESABINI BAĞLA</a>{% endif %}</section>
+<div class="foot">BLUE CAB v1.8 · Y.NO hücreleri sayıdır. Kurye dosyaları firma firma sıralanır; üst kurye başlığı ve alt firma paket özeti korunur.</div>
+</main></body></html>

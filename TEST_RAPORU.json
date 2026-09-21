@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-09-21T16:45:00+03:00",
+  "panel": "1.8-address-resolution-2026-09-21",
+  "tests_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "master": {
+    "version": "55477030921a",
+    "sha256": "55477030921a6695d9dd10655be3bdb82ceca592d934df8d412ae11a8adf6803",
+    "rows": 974,
+    "districts": 39,
+    "active": 712,
+    "closed": 262,
+    "rules_version": "2026-09-21-v1.8",
+    "sheet": "İstanbul Mahalle MASTER"
+  },
+  "real_file_regression": {
+    "source": "ATANAMADI.xlsx (21.09.2026 FIT_CHEF sample)",
+    "previously_unassigned": 46,
+    "resolved": 46,
+    "still_unassigned_from_those_46": 0,
+    "note": "Three other rows remain KONTROL GEREKİYOR because their district has mixed AKTİF/KAPALI neighborhoods and the source omits neighborhood; the engine does not guess."
+  },
+  "python_files_compiled": [
+    "app.py",
+    "bluecab_engine.py",
+    "list_duzenle.py",
+    "master_store.py",
+    "outputs.py",
+    "tests/test_engine.py"
+  ],
+  "additional_checks": [
+    "Approved address->neighborhood hints resolve without directly selecting courier",
+    "Nispetiye/Nisbetiye alias",
+    "46/46 former ATANMADI regression",
+    "Existing 13-engine regression tests"
+  ],
+  "tested_with": "Bundled MASTER, synthetic fixtures, and the 21.09.2026 ATANAMADI sample; no live Gmail/Drive write",
+  "not_tested": [
+    "Production deployment",
+    "Authenticated Google OAuth/Gmail/Sheets flow",
+    "Browser visual rendering"
+  ],
+  "live_panel_modified": false,
+  "source_drive_modified": false
+}
